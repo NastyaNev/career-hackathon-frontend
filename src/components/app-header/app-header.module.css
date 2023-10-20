@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    height: 82px;
+    /* width: 100vw; */
+    background-color: #D9D9D9;
+    align-items: center;
+}
+
+.links_container {
+    display: flex;
+    gap: 84px;
+    margin-left: 90px;
+}
