@@ -123,3 +123,72 @@
     font-style: normal;
     font-display: swap;
 }
+
+/*ниже заготовки для стилей текстов*/
+
+.d_bold {
+    font-weight: bold;
+}
+
+.d_light {
+    font-weight: 300;
+}
+
+.d_heavy {
+    font-weight: 900;
+}
+
+.d_medium {
+    font-weight: 500;
+}
+
+.d_regular {
+    /*установлен по умолчанию*/
+}
+
+.d_thin {
+    font-weight: 100;
+}
+
+.t_bold_it {
+    font-family: 'YS Text';
+    font-weight: bold;
+    font-style: italic;
+}
+
+.t_bold {
+    font-family: 'YS Text';
+    font-weight: bold;
+}
+
+.t_tight_it {
+    font-family: 'YS Text';
+    font-weight: 300;
+    font-style: italic;
+}
+
+.t_light {
+    font-family: 'YS Text';
+    font-weight: 300;
+}
+
+.t_mediun_it {
+    font-family: 'YS Text';
+    font-weight: 500;
+    font-style: italic;
+}
+
+.t_medium {
+    font-family: 'YS Text';
+    font-weight: 500;
+}
+
+.t_regular_it {
+    font-family: 'YS Text';
+    font-style: italic;
+}
+
+.t_regular {
+    font-family: 'YS Text';
+    font-family: 'YS Text';
+}
