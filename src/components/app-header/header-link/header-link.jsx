@@ -4,16 +4,13 @@ import { NavLink } from 'react-router-dom';
 
 function HeaderLink(props) {
   const { linkText, icon, link, className, id } = props;
-//   const setActiveLinkStyle = ({ isActive }: { isActive: boolean }): string => {
-//     return isActive ? `mt-4 mb-4 ${styles.header_link} ${(className)} text_color_primary`
-//       : `mt-4 mb-4 ${styles.header_link} ${(className)} text_color_inactive`;
-//   }
+  const setActiveLinkStyle = ({ isActive }) => {
+    return isActive ? styles.header_link_active : styles.header_link;
+  }
 
   return (
-    <NavLink className={styles.header_link} to={link}>
-      <div>
+    <NavLink className={setActiveLinkStyle} to={link}>
         <span>{linkText}</span>
-      </div>
     </NavLink>
   )
 }

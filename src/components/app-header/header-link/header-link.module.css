@@ -1,4 +1,15 @@
 .header_link {
     text-decoration: none;
     cursor: pointer;
+    color: #797981;
+    transition: color 0.5s ease-in-out;
+}
+
+.header_link:hover {
+    color: #4f4f4f;
+}
+
+.header_link_active {
+    color: #000000;
+    text-decoration: none;
 }
