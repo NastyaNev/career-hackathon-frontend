@@ -7,7 +7,7 @@ function Main() {
     <>
       <main className={styles.main_container}>
         <p className={styles.main_text}>Привет, я главная страница</p>
-        <Button variant="contained">Hello world</Button>;
+        <Button variant="contained">Hello world</Button>
       </main>
     </>
   )
