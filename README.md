@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/NastyaNev/hackathon-career-frontend/assets/129982615/8934a94a-26ba-40fd-9905-9cdb30c27d44" width="20%"/>
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/127f80c3-121c-4759-964a-f20554723ac2" width="20%" />
 </p>
 
 ***НАЧАЛО РАБОТЫ:***
