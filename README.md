@@ -13,7 +13,7 @@
    ```
 
    Ссылка на репо в зеленой кнопочке "Code".
-![[<img src="image.png" width="50%"/>]](image.png)
+![[<img src="image.png" width="10%"/>]](image.png)
 
 5. Установить зависимости из package.json
    ```console
