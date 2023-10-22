@@ -7,13 +7,23 @@
 Чтобы скачать проект к себе и начать над ним работать:
 
 1. Прислать лиду свой ник на github-е, чтобы тебя добавили в соавторы проекта.
-2. Клонировать репозиторий `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`. Ссылка на репо в зеленой кнопочке "Code".
-![Alt text](image.png)
-3. Установить зависимости из package.json
+2. Клонировать репозиторий
+   ```console
+   git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+   ```
+
+   Ссылка на репо в зеленой кнопочке "Code".
+![[<img src="image.png" width="50%"/>]](image.png)
+
+5. Установить зависимости из package.json
    ```console
    npm install
    ```
-4. Запустить проект локально ```console npm start
+6. Запустить проект локально
+   ```console
+   npm start
+   ```
+   
    
 
 ***ПРАВИЛА РАБОТЫ:***
