@@ -58,11 +58,11 @@ import stylesLayout from "../layout/layout.module.css";
 
 ***ЧТО СДЕЛАНО:***
 
-* Установлены библиотеки:
-  &nbsp;&nbsp;&nbsp;&nbsp;1. React
-  &nbsp;&nbsp;&nbsp;&nbsp;2. Redux
-  &nbsp;&nbsp;&nbsp;&nbsp;3. Toolkit
-  &nbsp;&nbsp;&nbsp;&nbsp;4. MUI
+* Установлены библиотеки:<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;1. React<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;2. Redux<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;3. Toolkit<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;4. MUI<br />
   &nbsp;&nbsp;&nbsp;&nbsp;5. react-router-dom
 
 * Установлены шрифты.
@@ -70,11 +70,11 @@ import stylesLayout from "../layout/layout.module.css";
   В качестве основного дизайнерами выбран пакет шрифтов YS из кита. В качестве основного для всего приложения установлен шрифт YS Display, но обратите внимание,   что в том наборе есть еще шрифт YS Text. Последний также подключен к проекту, но не в качестве основного.
   
   В файле ```fonts.css``` сделаны заготовки классов для стилей шрифтов, чтобы их также не дублировать и делать микс.
-<img src="image-2.png" width="30%" />
+  <img src="image-2.png" width="30%" />
   
-  Класс выглядит так: ```.d_medium_it```
-    Первая буква - это либо шрифт Display ```d_```, либо Text ```t_``` ;
-    Второе слово - это толщина шрифта, может быть ```bold``` , ```medium``` , ```thin``` , ```regular``` , ```light``` ;
+  Класс выглядит так: ```.d_medium_it```<br />
+    Первая буква - это либо шрифт Display ```d_```, либо Text ```t_``` ;<br />
+    Второе слово - это толщина шрифта, может быть ```bold``` , ```medium``` , ```thin``` , ```regular``` , ```light``` ;<br />
     Сочетание ```_it``` добавляется, если требуется шрифт Italic;
   
   **По умолчанию установлен шрифт YSDisplay-Regular.**
