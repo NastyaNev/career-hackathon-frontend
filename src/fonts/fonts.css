@@ -161,7 +161,7 @@
     font-weight: bold;
 }
 
-.t_tight_it {
+.t_light_it {
     font-family: 'YS Text';
     font-weight: 300;
     font-style: italic;
@@ -172,7 +172,7 @@
     font-weight: 300;
 }
 
-.t_mediun_it {
+.t_medium_it {
     font-family: 'YS Text';
     font-weight: 500;
     font-style: italic;
