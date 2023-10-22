@@ -59,11 +59,11 @@ import stylesLayout from "../layout/layout.module.css";
 ***ЧТО СДЕЛАНО:***
 
 * Установлены библиотеки:
-&nbsp;&nbsp;&nbsp;&nbsp;1. React
-&nbsp;&nbsp;&nbsp;&nbsp;2. Redux
-&nbsp;&nbsp;&nbsp;&nbsp;3. Toolkit
-&nbsp;&nbsp;&nbsp;&nbsp;4. MUI
-&nbsp;&nbsp;&nbsp;&nbsp;5. react-router-dom
+  &nbsp;&nbsp;&nbsp;&nbsp;1. React
+  &nbsp;&nbsp;&nbsp;&nbsp;2. Redux
+  &nbsp;&nbsp;&nbsp;&nbsp;3. Toolkit
+  &nbsp;&nbsp;&nbsp;&nbsp;4. MUI
+  &nbsp;&nbsp;&nbsp;&nbsp;5. react-router-dom
 
 * Установлены шрифты.
 
@@ -73,10 +73,9 @@ import stylesLayout from "../layout/layout.module.css";
 <img src="image-2.png" width="30%" />
   
   Класс выглядит так: ```.d_medium_it```
-  
-  - Первая буква - это либо шрифт Display ```d_```, либо Text ```t_``` ;
-  - Второе слово - это толщина шрифта, может быть ```bold``` , ```medium``` , ```thin``` , ```regular``` , ```light``` ;
-  - Сочетание ```_it``` добавляется, если требуется шрифт Italic;
+    Первая буква - это либо шрифт Display ```d_```, либо Text ```t_``` ;
+    Второе слово - это толщина шрифта, может быть ```bold``` , ```medium``` , ```thin``` , ```regular``` , ```light``` ;
+    Сочетание ```_it``` добавляется, если требуется шрифт Italic;
   
   **По умолчанию установлен шрифт YSDisplay-Regular.**
 
