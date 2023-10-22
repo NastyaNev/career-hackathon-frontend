@@ -23,7 +23,10 @@
 
 ![Alt text](image-1.png)
 
-В примере в jsx файл компонента импортированы стили самого компонента ``` import styles from "./app-header.module.css";```, а также нужные стили из другого компонента ```css import stylesLayout from "../layout/layout.module.css";```, и из нужных классов сделан микс ```html <div className={`${styles.header_content} ${stylesLayout.page}`}>``` .
+В примере в jsx файл компонента импортированы стили самого компонента ``` import styles from "./app-header.module.css";```, а также нужные стили из другого компонента ```css import stylesLayout from "../layout/layout.module.css";```, и из нужных классов сделан микс
+```html
+<div className={`${styles.header_content} ${stylesLayout.page}`}>
+``` 
 
 
 *** ЧТО СДЕЛАНО: ***
