@@ -13,10 +13,8 @@
    ```console
    npm install
    ```
-4. Запустить проект локально
-   ```console
-   npm start
-   ```.
+4. Запустить проект локально ```console npm start
+   
 
 ***ПРАВИЛА РАБОТЫ:***
 
