@@ -73,9 +73,9 @@ import stylesLayout from "../layout/layout.module.css";
   <img src="image-2.png" width="30%" />
   
   Класс выглядит так: ```.d_medium_it```<br />
-    Первая буква - это либо шрифт Display ```d_```, либо Text ```t_``` ;<br />
-    Второе слово - это толщина шрифта, может быть ```bold``` , ```medium``` , ```thin``` , ```regular``` , ```light``` ;<br />
-    Сочетание ```_it``` добавляется, если требуется шрифт Italic;
+  &nbsp;&nbsp;&nbsp;&nbsp;Первая буква - это либо шрифт Display ```d_```, либо Text ```t_``` ;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;Второе слово - это толщина шрифта, может быть ```bold``` , ```medium``` , ```thin``` , ```regular``` , ```light``` ;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;Сочетание ```_it``` добавляется, если требуется шрифт Italic;
   
   **По умолчанию установлен шрифт YSDisplay-Regular.**
 
