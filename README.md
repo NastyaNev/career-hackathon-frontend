@@ -19,6 +19,12 @@
    ```console
    npm install
    ```
+
+  ВАЖНО!!! Теперь зависимостри всгда устанавливаем с ключем
+  ```console
+  --legacy-peer-deps
+  ```
+
 6. Запустить проект локально
    ```console
    npm start

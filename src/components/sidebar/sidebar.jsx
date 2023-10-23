@@ -5,8 +5,7 @@ import HeaderLink from "../app-header/header-link/header-link";
 function Sidebar() {
   return (
     <Box sx={{backgroundColor: '#d9d9d9',
-    width: 213,
-    height: 'calc(100vh - 82px)'}}>
+    width: 213}}>
       <Stack ml={5} mt={11.875}>
         <Stack spacing={6.75}>
           <HeaderLink linkText="Главная" link="/" />
