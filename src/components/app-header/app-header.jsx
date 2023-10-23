@@ -1,31 +1,30 @@
 import React from "react";
-import HeaderLink from "./header-link/header-link";
 import styles from "./app-header.module.css";
 import notification from "../../images/notification.svg";
 import avatar from "../../images/avatar.jpg";
-import stylesLayout from "../layout/layout.module.css";
 import IconButton from "@mui/material/Button";
-import { Avatar, Link, Stack, Tooltip } from "@mui/material";
+import { Avatar, Link, Stack, Tooltip, Typography } from "@mui/material";
 
 function AppHeader() {
   return (
     <header className={styles.header_background}>
-      <Stack direction="row" useFlexGap justifyContent='space-between' alignItems='center' className={stylesLayout.page}>
-        <Stack direction="row" spacing={10.5}>
-          <HeaderLink linkText="Главная" link="/" />
-          <HeaderLink linkText="Вакансии" link="/vacancies" />
-          <HeaderLink linkText="Кандидаты" link="/candidates" />
-        </Stack>
-        <Stack direction="row" spacing={5}>
+      <Stack direction="row" useFlexGap justifyContent='space-between' alignItems='center' className={styles.header_content} ml={5}>
+        <Tooltip title="Личный кабинет">
+          <Link href="#" underline='none' sx={{'&:hover': {opacity: [0.9, 0.8, 0.7]}, display: 'flex',  ftexDirection: 'row', gap: '12px'}} >
+            <Avatar src={avatar} alt="аватар" />
+            <Typography sx={{alignSelf: 'center'}}>Имя рекрутера</Typography>
+          </Link>
+        </Tooltip>
+        <Stack direction="row" spacing={2.125}>
           <Tooltip title="Уведомления">
-            <IconButton aria-label="delete" sx={{padding: 0}}>
+            <IconButton aria-label="delete" sx={{padding: 0, minWidth: 0}}>
               <img src={notification} alt="колокольчик" />
             </IconButton>
           </Tooltip>
-          <Tooltip title="Личный кабинет">
-            <Link href="#" underline='none' sx={{'&:hover': {opacity: [0.9, 0.8, 0.7]}}}>
-              <Avatar src={avatar} alt="аватар" />
-            </Link>
+          <Tooltip title="Уведомления">
+            <IconButton aria-label="delete" sx={{padding: 0, minWidth: 0}}>
+              <img src={notification} alt="колокольчик" />
+            </IconButton>
           </Tooltip>
         </Stack>
       </Stack>

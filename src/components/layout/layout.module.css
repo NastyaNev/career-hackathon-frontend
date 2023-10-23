@@ -1,5 +1,7 @@
-.page {
-    width: calc(100vw - 100vw/10);
-    margin: 0 auto 0 auto;
-    max-width: 1440px;
+.main {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - (213px + 100vw/10));
+    margin-left: calc(100vw/40);
+    margin-top: 72px;
 }

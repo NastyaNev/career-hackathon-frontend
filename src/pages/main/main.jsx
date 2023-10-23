@@ -1,14 +1,21 @@
 import React from 'react';
 import styles from "./main.module.css";
-import Button from '@mui/material/Button';
+import { Stack } from '@mui/material';
+import Carousel from '../../components/carousel/carousel';
 
 function Main() {
   return (
     <>
-      <main className={styles.main_container}>
-        <p className={styles.main_text}>Привет, я главная страница</p>
-        <Button variant="contained">Hello world</Button>
-      </main>
+      <Stack direction="row" useFlexGap justifyContent='space-between' alignItems='center'>
+        <p>место для статистики</p>
+        <p>место для статистики</p>
+        <p>место для статистики</p>
+      </Stack>
+      <Stack mt={7.5} spacing={7.5}>
+        <Carousel title='Заголовок' buttonText='Текст кнопки' />
+        <Carousel />
+        <Carousel />
+      </Stack>
     </>
   )
 }

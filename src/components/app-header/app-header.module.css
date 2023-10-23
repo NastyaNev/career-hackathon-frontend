@@ -3,7 +3,11 @@
     width: 100vw;
     height: 82px;
     display: flex;
-    justify-content: center;
+}
+
+.header_content {
+    width: calc(100vw - 100vw/10);
+    margin-left: calc(100vw/40);
 }
 
 .icon_menu_link {
