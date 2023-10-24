@@ -18,8 +18,8 @@ function App() {
   return (
     // <ThemeProvider theme={theme}>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Main />} />
+        <Route path="/career-hackathon-frontend" element={<Layout />}>
+          <Route path="/career-hackathon-frontend" element={<Main />} />
           <Route path="vacancies" element={<Vacancies />} />
           <Route path="candidates" element={<Candidates />} />
           <Route path="*" element={<NotFound />} />
