@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from "./main.module.css";
 import { Stack } from '@mui/material';
-import Car from '../../components/carousel/carousel';
+import SlideGallery from '../../components/slide-gallery/slide-gallery';
+
 
 function Main() {
   return (
@@ -12,9 +12,9 @@ function Main() {
         <p>место для статистики</p>
       </Stack>
       <Stack mt={7.5} spacing={7.5}>
-        <Car title='Заголовок' buttonText='Текст кнопки' />
-        <Car title='Заголовок' buttonText='Текст кнопки' />
-        <Car title='Заголовок' buttonText='Текст кнопки' />
+        <SlideGallery title='Заголовок' buttonText='Текст кнопки' />
+        <SlideGallery title='Заголовок' buttonText='Текст кнопки' />
+        <SlideGallery title='Заголовок' buttonText='Текст кнопки' />
       </Stack>
     </>
   )

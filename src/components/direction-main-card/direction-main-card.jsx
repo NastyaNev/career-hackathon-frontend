@@ -1,13 +1,13 @@
 import { Paper } from "@mui/material";
 import React from "react";
+import styles from "./direction-main-card.module.css";
 
 function DirectionMainCard(props) {
 
   const { item } = props;
 
   return (
-    // <div>direction-main-card</div>
-    <Paper elevation={3} square={false} sx={{width: 272, height: 200}}>
+    <Paper elevation={3} square={false} sx={{width: 290, height: 230}}>
       <h2>{item.name}</h2>
       <p>{item.description}</p>
     </Paper>

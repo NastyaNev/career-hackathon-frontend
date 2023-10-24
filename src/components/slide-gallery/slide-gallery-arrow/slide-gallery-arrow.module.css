@@ -1,0 +1,13 @@
+.leftArrow {
+    position: absolute;
+    z-index: 100;
+    left: 80%;
+    filter: #1D6BF3;
+}
+
+.rightArrow {
+    position: absolute;
+    z-index: 100;
+    right: 5%;
+    background-color: #1D6BF3;
+}

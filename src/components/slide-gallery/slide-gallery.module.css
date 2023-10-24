@@ -1,0 +1,15 @@
+.title {
+    margin: 0;
+}
+
+:global(.rec.rec-pagination) {
+    display: none;
+}
+
+:global(.rec.rec-slider-container) {
+    margin: 0;
+}
+
+:global(.rec.rec-carousel-wrapper) {
+    /* width: 1300px; */
+}

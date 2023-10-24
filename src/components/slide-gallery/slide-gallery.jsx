@@ -1,11 +1,12 @@
 import { Button } from "@mui/material";
 import { Stack } from "@mui/system";
-import styles from "./carousel.module.css";
+import styles from "./slide-gallery.module.css";
 import React from "react";
 import DirectionMainCard from "../direction-main-card/direction-main-card";
 import Carousel from 'react-elastic-carousel';
+import SlideGalleryArrow from "./slide-gallery-arrow/slide-gallery-arrow";
 
-function Car(props) {
+function SlideGallery(props) {
   const { title, buttonText } = props;
 
   const items = [
@@ -37,11 +38,11 @@ function Car(props) {
 
   return (
     <Stack>
-      <Stack direction="row" useFlexGap justifyContent='space-between' alignItems='center'>
-          <p>{title}</p>
-          <Button variant="outlined">{buttonText}</Button>
+      <Stack direction="row" useFlexGap justifyContent='space-between' alignItems='center' mb={2.375}>
+          <p className={styles.title}>{title}</p>
+          <Button variant="outlined" sx={{width: 130, height: 40, padding: 0}}>{buttonText}</Button>
       </Stack>
-          <Carousel itemsToShow={4} itemsToScroll={2}  >
+          <Carousel itemsToShow={3} itemsToScroll={2} renderArrow={SlideGalleryArrow} >
           {
               items.map( (item, i) => <DirectionMainCard key={i} item={item} /> )
           }
@@ -50,4 +51,4 @@ function Car(props) {
   )
 }
 
-export default Car
+export default SlideGallery
