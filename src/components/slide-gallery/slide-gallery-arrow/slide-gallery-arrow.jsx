@@ -10,7 +10,7 @@ function SlideGalleryArrow({ type, onClick, isEdge }) {
     const className = type === consts.PREV ? styles.leftArrow : styles.rightArrow;
 
     return (
-      <Button onClick={onClick} disabled={isEdge} className={className}>
+      <Button onClick={onClick} disabled={isEdge} className={className} >
         <Paper elevation={3} sx={{height: 24, width: 24, background: '#f9fafb'}}>
             {pointer}
         </Paper>

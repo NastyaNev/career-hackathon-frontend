@@ -3,7 +3,7 @@ import { Stack } from "@mui/system";
 import styles from "./slide-gallery.module.css";
 import React from "react";
 import DirectionMainCard from "../direction-main-card/direction-main-card";
-import Carousel from 'react-elastic-carousel';
+import Carousel, { consts } from 'react-elastic-carousel';
 import SlideGalleryArrow from "./slide-gallery-arrow/slide-gallery-arrow";
 
 function SlideGallery(props) {
@@ -40,9 +40,9 @@ function SlideGallery(props) {
     <Stack>
       <Stack direction="row" useFlexGap justifyContent='space-between' alignItems='center' mb={2.375}>
           <p className={styles.title}>{title}</p>
-          <Button variant="outlined" sx={{width: 130, height: 40, padding: 0}}>{buttonText}</Button>
+          <Button variant="outlined" sx={{width: 130, height: 40, padding: 0, marginRight: '40px'}} >{buttonText}</Button>
       </Stack>
-          <Carousel itemsToShow={3} itemsToScroll={2} renderArrow={SlideGalleryArrow} >
+          <Carousel itemsToShow={3} itemsToScroll={2} renderArrow={SlideGalleryArrow}>
           {
               items.map( (item, i) => <DirectionMainCard key={i} item={item} /> )
           }
