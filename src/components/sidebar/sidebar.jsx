@@ -1,7 +1,7 @@
 import React from "react";
-import HeaderLink from "../app-header/header-link/header-link";
 import { Avatar, Link, Stack, Tooltip, Typography, Box } from "@mui/material";
 import avatar from "../../images/avatar.jpg";
+import HeaderLink from "components/app-header/header-link/header-link";
 
 function Sidebar() {
   return (
