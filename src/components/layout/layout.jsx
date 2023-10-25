@@ -7,15 +7,15 @@ import { Stack } from "@mui/material";
 
 function Layout() {
   return (
-    <>
-      <AppHeader />
-      <Stack direction="row">
-        <Sidebar />
+    <Stack direction='row'>
+      <Sidebar />
+      <Stack>
+        <AppHeader />
         <main className={styles.main}>
           <Outlet />
         </main>
       </Stack>
-    </>
+    </Stack>
   );
 }
 

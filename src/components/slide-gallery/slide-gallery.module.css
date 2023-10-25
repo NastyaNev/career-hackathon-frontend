@@ -1,0 +1,25 @@
+.title {
+    margin: 0 0 0 5px;
+}
+
+:global(.rec.rec-pagination) {
+    display: none;
+}
+
+:global(.rec.rec-slider-container) {
+    margin: 0;
+}
+
+:global(.rec.rec-carousel-wrapper) {
+}
+
+:global(.rec.rec-carousel) {
+    
+}
+
+.buttons_container {
+    position: absolute !important;
+    z-index: 100;
+    right: 44px;
+    top: 45%;
+}
