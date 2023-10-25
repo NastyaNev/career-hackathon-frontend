@@ -10,6 +10,6 @@
 }
 
 .header_link_active {
-    color: #000000;
-    text-decoration: none;
+    color: white;
+    text-decoration: underline;
 }

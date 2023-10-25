@@ -1,0 +1,27 @@
+.leftArrow {
+    min-width: 25px !important;
+    padding: 0 !important;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.rightArrow {
+    min-width: 25px !important;
+    padding: 0 !important;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.leftArrow:hover {
+    opacity: 0.8;
+}
+
+.rightArrow:hover {
+    opacity: 0.8;
+}
+
+.leftArrow:disabled {
+    opacity: 0.3;
+}
+
+.rightArrow:disabled {
+    opacity: 0.3;
+}
