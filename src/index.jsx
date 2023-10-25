@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
     <React.StrictMode>
-      <BrowserRouter basename="/career-hackathon-frontend">
+      <BrowserRouter basename="/">
         <App />
       </BrowserRouter>
     </React.StrictMode>
