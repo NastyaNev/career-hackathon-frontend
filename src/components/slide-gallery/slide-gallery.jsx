@@ -71,6 +71,7 @@ function SlideGallery(props) {
               onClick={() => {
                 carousel.current.slideNext();
               }}
+              isEdge={disabledNextArrow}
             />
         </Stack>
         <Carousel
