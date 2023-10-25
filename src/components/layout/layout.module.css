@@ -1,16 +1,19 @@
 .main {
     display: flex;
     flex-direction: column;
-    width: 1300px;
+    width: calc(100vw - 197.5px);
+    /* max-width: 1300px; */
     /* width: calc(100vw - (140px + 100vw/10)); */
     /* margin-left: calc(100vw/40); */
     /* margin-top: 72px; */
-    margin: 72px auto 0 auto;
+    margin-top: 72px;
+    margin-left: 40px;
 }
 
-@media (max-width: 1530px) {
-  .main {
-    margin-left: 40px;
-    margin-top: 72px;
-  }
-}
+/* @media (max-width: 1519px) {
+    .main {
+        width: 1260px;
+        margin-left: 40px;
+        margin-top: 72px;
+    }
+} */

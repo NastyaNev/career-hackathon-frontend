@@ -1,18 +1,10 @@
 .leftArrow {
-    position: absolute !important;
-    z-index: 100;
-    left: 92%;
-    top: 45%;
     min-width: 25px !important;
     padding: 0 !important;
     transition: opacity 0.5s ease-in-out;
 }
 
 .rightArrow {
-    position: absolute !important;
-    z-index: 100;
-    right: 44px;
-    top: 45%;
     min-width: 25px !important;
     padding: 0 !important;
     transition: opacity 0.5s ease-in-out;

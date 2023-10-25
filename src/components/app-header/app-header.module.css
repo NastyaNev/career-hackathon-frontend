@@ -1,21 +1,14 @@
 .header_background {
-    background-color: #D9D9D9;
-    width: 100vw;
+    background-color: #1A1B22;
+    width: calc(100vw - 157.5px);
     height: 72px;
     display: flex;
+    color: white;
 }
 
 .header_content {
-    width: calc(100vw - 100vw/10);
-    margin-left: calc(100vw/40);
-}
-
-.icon_menu_link {
-    transition: opacity 0.5s ease-in-out;
-}
-
-.icon_menu_link:hover {
-    opacity: 0.6;
+    width: 100%;
+    margin-left: 8px !important;
 }
 
 .icon_avatar {

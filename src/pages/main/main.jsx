@@ -1,6 +1,7 @@
 import React from 'react';
 import { Stack } from '@mui/material';
 import SlideGallery from '../../components/slide-gallery/slide-gallery';
+import styles from './main.module.css';
 
 
 function Main() {
@@ -11,7 +12,7 @@ function Main() {
         <p>место для статистики</p>
         <p>место для статистики</p>
       </Stack>
-      <Stack mt={7.5} spacing={7.5}>
+      <Stack mt={7.5} spacing={7.5} className={styles.galleries_container}>
         <SlideGallery title='Заголовок' buttonText='Текст кнопки' />
         <SlideGallery title='Заголовок' buttonText='Текст кнопки' />
         <SlideGallery title='Заголовок' buttonText='Текст кнопки' />

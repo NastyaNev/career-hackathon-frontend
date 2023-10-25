@@ -11,9 +11,15 @@
 }
 
 :global(.rec.rec-carousel-wrapper) {
-    position: relative;
 }
 
 :global(.rec.rec-carousel) {
     
+}
+
+.buttons_container {
+    position: absolute !important;
+    z-index: 100;
+    right: 44px;
+    top: 45%;
 }
