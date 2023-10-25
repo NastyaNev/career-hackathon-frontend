@@ -21,8 +21,8 @@ function App() {
     // <ThemeProvider theme={theme}>
     <div className={styles.page}>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Main />} />
+        <Route path="/career-hackathon-frontend" element={<Layout />}>
+          <Route path="/career-hackathon-frontend" element={<Main />} />
           <Route path="vacancies" element={<Vacancies />} />
           <Route path="candidates" element={<Candidates />} />
           <Route path="applications" element={<Applications />} />
