@@ -4,15 +4,15 @@ import "./index.css";
 import "./fonts/fonts.css";
 import App from "./components/app/app";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
     <React.StrictMode>
-      <BrowserRouter basename="/career-hackathon-frontend">
+      <HashRouter basename="/career-hackathon-frontend">
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </React.StrictMode>
 );
 
