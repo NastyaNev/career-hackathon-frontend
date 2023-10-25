@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./app-header.module.css";
-import notification from "../../images/notification.svg";
+import { NotificationIcon } from "../../images/icons/notification";
 import avatar from "../../images/avatar.jpg";
 import IconButton from "@mui/material/Button";
 import { Avatar, Link, Stack, Tooltip, Typography } from "@mui/material";
@@ -18,12 +18,12 @@ function AppHeader() {
         <Stack direction="row" spacing={2.125}>
           <Tooltip title="Уведомления">
             <IconButton aria-label="delete" sx={{padding: 0, minWidth: 0}}>
-              <img src={notification} alt="колокольчик" />
+              <NotificationIcon />
             </IconButton>
           </Tooltip>
           <Tooltip title="Уведомления">
             <IconButton aria-label="delete" sx={{padding: 0, minWidth: 0}}>
-              <img src={notification} alt="колокольчик" />
+              <NotificationIcon />
             </IconButton>
           </Tooltip>
         </Stack>

@@ -1,7 +1,9 @@
 import React from 'react';
-import styles from "./main.module.css";
+import styles from './main.module.css'
 import { Stack } from '@mui/material';
 import Carousel from '../../components/carousel/carousel';
+import Highlight from "../../components/ui/highlight/highlight";
+import list from '../../images/icons/list.svg'
 
 function Main() {
   return (
@@ -16,6 +18,7 @@ function Main() {
         <Carousel />
         <Carousel />
       </Stack>
+      <Highlight text={"Задач на сегодня"} notifications={3} icon={list} boxType={'tasks'} />
     </>
   )
 }
