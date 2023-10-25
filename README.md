@@ -1,3 +1,6 @@
+ <p align="center">
+  <b align="center" >Demo опубликавано на GitHub-pages - <a href=" https://nastyanev.github.io/career-hackathon-frontend/" title="Ссылка на GitHub Pages">ссылка</a>.</b>
+ </p>
 <p align="center">
   <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/127f80c3-121c-4759-964a-f20554723ac2" width="20%" />
 </p>
