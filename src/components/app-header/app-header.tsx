@@ -8,7 +8,7 @@ import { Stack, Tooltip } from "@mui/material";
 function AppHeader() {
   return (
     <header className={styles.header_background}>
-      <Stack direction="row" useFlexGap justifyContent='flex-end' alignItems='center' className={styles.header_content} ml={5}>
+      <Stack direction="row" useFlexGap justifyContent='flex-end' alignItems='center' className={styles.header_content}>
         <Stack direction="row" spacing={1.5} mr={5}>
           <Tooltip title="Уведомления">
             <IconButton aria-label="delete" sx={{'&:hover': {opacity: [0.8, 0.8, 0.7]}, padding: 0, minWidth: 0}}>

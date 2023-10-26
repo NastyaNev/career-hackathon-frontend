@@ -17,6 +17,10 @@
     
 }
 
+.carousel_container {
+    margin-top: 24px !important;
+}
+
 .buttons_container {
     position: absolute !important;
     z-index: 100;

@@ -9,7 +9,7 @@ function Layout() {
   return (
     <Stack direction='row'>
       <Sidebar />
-      <Stack>
+      <Stack className={styles.main_container}>
         <AppHeader />
         <main className={styles.main}>
           <Outlet />

@@ -1,6 +1,8 @@
 import React, { ReactNode } from "react";
-import classNames from 'classnames'
+import classNames from 'classnames';
 import Box from '@mui/material/Box';
+import { Link } from "@mui/material";
+
 
 import styles from './styles.module.css'
 
@@ -12,7 +14,7 @@ interface IHighlightProps {
 }
 
 const Highlight = ({ text, notifications, icon, boxType } : IHighlightProps) => {
-  return <Box
+  return <Link href="#" underline='none' sx={{'&:hover': {opacity: [0.9, 0.8, 0.7]}, color: '#1a1b22', fontFamily: 'YS Text', fontWeight: 500}}
     className={classNames(styles.box, styles[`box--${boxType}`])}
   >
       <Box
@@ -25,8 +27,8 @@ const Highlight = ({ text, notifications, icon, boxType } : IHighlightProps) => 
         src={icon}
       />
       <span className={styles.text}>{text}</span>
-      <span>{notifications}</span>
-  </Box>
+      <span className={styles.highlight_span}>{notifications}</span>
+  </Link>
 }
 
 

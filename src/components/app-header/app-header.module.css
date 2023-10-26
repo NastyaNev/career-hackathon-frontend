@@ -1,14 +1,15 @@
 .header_background {
     background-color: #1A1B22;
-    width: calc(100vw - 157.5px);
+    width: calc(100vw - 140px);
     height: 72px;
     display: flex;
     color: white;
+    position: fixed;
+    z-index: 100;
 }
 
 .header_content {
     width: 100%;
-    margin-left: 8px !important;
 }
 
 .icon_avatar {

@@ -1,8 +1,10 @@
 .header_link {
     text-decoration: none;
     cursor: pointer;
-    color: #797981;
+    color: #5c5c61;
     transition: color 0.5s ease-in-out;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .header_link:hover {
@@ -10,6 +12,8 @@
 }
 
 .header_link_active {
-    color: white;
+    color: #B5B5B7;
     text-decoration: underline;
+    font-size: 14px;
+    line-height: 20px;
 }
