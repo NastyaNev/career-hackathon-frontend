@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/career-hackathon-frontend/static/css/main.bb9e8dd0.css",
-    "main.js": "/career-hackathon-frontend/static/js/main.258104e2.js",
+    "main.css": "/career-hackathon-frontend/static/css/main.4840d05d.css",
+    "main.js": "/career-hackathon-frontend/static/js/main.86b134e0.js",
     "static/media/avatar.jpg": "/career-hackathon-frontend/static/media/avatar.9f37c61701732f4ca63b.jpg",
     "static/media/YSText-BoldItalic.woff": "/career-hackathon-frontend/static/media/YSText-BoldItalic.b7afee06b16b9622ee26.woff",
     "static/media/YSText-MediumItalic.woff": "/career-hackathon-frontend/static/media/YSText-MediumItalic.541c0ed003a7f09f0983.woff",
@@ -42,11 +42,11 @@
     "static/media/list.svg": "/career-hackathon-frontend/static/media/list.ca9fcc6024afc20f4d54b6eaef66205d.svg",
     "static/media/clock.svg": "/career-hackathon-frontend/static/media/clock.f0cc1b055de93e9dd69d649cf0e70396.svg",
     "static/media/plus.svg": "/career-hackathon-frontend/static/media/plus.c810b6c24fae34f202efeb9919b40394.svg",
-    "main.bb9e8dd0.css.map": "/career-hackathon-frontend/static/css/main.bb9e8dd0.css.map",
-    "main.258104e2.js.map": "/career-hackathon-frontend/static/js/main.258104e2.js.map"
+    "main.4840d05d.css.map": "/career-hackathon-frontend/static/css/main.4840d05d.css.map",
+    "main.86b134e0.js.map": "/career-hackathon-frontend/static/js/main.86b134e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb9e8dd0.css",
-    "static/js/main.258104e2.js"
+    "static/css/main.4840d05d.css",
+    "static/js/main.86b134e0.js"
   ]
 }
