@@ -31,3 +31,8 @@
   border-radius: 6px;
   border: 10px;
 }
+
+.new-class-input {
+  padding: 0 !important;
+}
+
