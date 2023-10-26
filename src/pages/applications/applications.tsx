@@ -1,6 +1,6 @@
 import React from 'react'
-import {Stack} from "@mui/material";
-import styles from './application.module.css'
+import {Button, ButtonGroup, Stack, TextField} from "@mui/material";
+import styles from './application.module.css';
 
 import PageSubMenu from "../../components/ui/page-sub-menu/PageSubMenu";
 import PageSubMenuLink from "../../components/ui/page-sub-menu-link/PageSubMenuLink";
@@ -33,6 +33,15 @@ function Applications() {
           </>
         }
         />
+          <div className={styles.filters}>
+              <TextField
+                  sx={{padding: `8px 12px`}}
+                  className={styles.find}/>
+              <ButtonGroup className={styles.buttons}>
+                  <Button className={styles.button}></Button>
+                  <Button className={styles.button}></Button>
+              </ButtonGroup>
+          </div>
       </Stack>
     </main>
   )

@@ -1,4 +1,4 @@
 .tabContainer {
   list-style: none;
-  text-decoration: none;
+  gap: 20px !important;
 }

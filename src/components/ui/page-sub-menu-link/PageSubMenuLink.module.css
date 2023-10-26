@@ -6,6 +6,10 @@
   color: #000;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .tabContainer__text {
   width: max-content;
   margin: 0;
