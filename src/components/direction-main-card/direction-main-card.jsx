@@ -62,12 +62,17 @@ function DirectionMainCard(props) {
     padding: '2px 4px',
     height: '14px',
 
+  };
+
+  const imgStyle = {
+    with: '100px',
+    height: '76px'
   }
 
   return (
     <Paper elevation={3} square={false} sx={cardStyle}>
       <Stack sx={{ padding: '24px' }}>
-        <img
+        <img style={ imgStyle }
           src={item.image}
           alt="Изображение"
           style={imageStyle}
