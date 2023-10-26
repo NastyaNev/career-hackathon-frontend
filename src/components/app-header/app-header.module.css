@@ -6,10 +6,11 @@
     color: white;
     position: fixed;
     z-index: 100;
+    justify-content: flex-end;
 }
 
 .header_content {
-    width: 100%;
+    width: 70%;
 }
 
 .icon_avatar {
