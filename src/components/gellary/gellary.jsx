@@ -1,11 +1,11 @@
 import SlideGallery from 'components/slide-gallery/slide-gallery';
 import React from 'react';
 
-function Gellary({cover}) {
+function Gellary({ cover, card,  items }) {
   return (
     <>
         {cover}
-        <SlideGallery />
+        <SlideGallery card={card} items={items} />
     </>
   )
 }

@@ -6,45 +6,12 @@ import Carousel, { consts } from "react-elastic-carousel";
 import SlideGalleryArrow from "./slide-gallery-arrow/slide-gallery-arrow";
 import RenderComponent from "./render-component/render-component";
 
-import Cartinka from "../../images/plus.svg" // Нужно добавить в массив соответствующие изображения для карусели с кандидатами
+function SlideGallery({ card, items }) {
+  const Card = card;
 
-function SlideGallery() {
   const carousel = useRef();
   const [disabledPrevArrow, setDisabledPrevArrow] = useState(true);
   const [disabledNextArrow, setDisabledNextArrow] = useState(true);
-
-  const items = [
-    {
-      name: "Random Name #1",
-      description: "Probably!",
-      image: Cartinka,
-    },
-    {
-      name: "Random Name #2",
-      description: "Hello World!",
-      image: Cartinka,
-    },
-    {
-      name: "Random Name #3",
-      description: "Probably!",
-      image: Cartinka,
-    },
-    {
-      name: "Random Name #4",
-      description: "Hello World!",
-      image: Cartinka,
-    },
-    {
-      name: "Random Name #5",
-      description: "Probably!",
-      image: Cartinka,
-    },
-    {
-      name: "Random Name #6",
-      description: "Hello World!",
-      image: Cartinka,
-    },
-  ];
 
   return (
     <Stack className={styles.carousel_container}>
@@ -88,7 +55,7 @@ function SlideGallery() {
           }}
         >
           {items.map((item, i) => (
-            <DirectionMainCard key={i} item={item} />
+            <Card key={i} item={item} />
           ))}
         </Carousel>
       </Stack>

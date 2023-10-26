@@ -56,10 +56,12 @@ function DirectionMainCard(props) {
     color: '#FFF',
     fontWeight: '500',
     fontSize: '11px',
-    lineHeight: '12px',
+    lineHeight: '16px',
     backgroundColor: '#87CC9E',
-    borderRadius: '50%',
-    padding: '2px 4px'
+    borderRadius: '10px',
+    padding: '2px 4px',
+    height: '14px',
+
   }
 
   return (
@@ -72,14 +74,13 @@ function DirectionMainCard(props) {
         />
         <div style={ divTopStyle }>
           <Typography variant="body2" style={{ ...textTopStyle, marginRight: '12px' }}>Всего резюме:</Typography>
-          <Typography variant="body2" style={{ ...textTopStyle, marginRight: '2px' }}>80</Typography>
-          <Typography variant="body2" style={ textGreenrStyle }>+12</Typography>
+          <Typography variant="body2" style={{ ...textTopStyle, marginRight: '2px' }}>{item.total}</Typography>
+          <Typography variant="body2" style={ textGreenrStyle }>{"+" + item.new}</Typography>
         </div>
         <Typography variant="h6" style={ textHeaderStyle }>{item.name}</Typography>
-        <Typography variant="body2" style={ textDownStyle }>{item.description}</Typography> {/* продублировала для наглядности на макете*/}
-        <Typography variant="body2" style={ textDownStyle }>{item.description}</Typography>
-        <Typography variant="body2" style={ textDownStyle }>{item.description}</Typography>
-        <Typography variant="body2" style={ textDownStyle }>{item.description}</Typography>
+        {item.skills.map((i) => (
+          <Typography variant="body2" style={ textDownStyle }>{i}</Typography>))
+        }
       </Stack>
     </Paper>
   );

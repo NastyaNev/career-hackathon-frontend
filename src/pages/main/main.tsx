@@ -9,6 +9,10 @@ import Gellary from '../../components/gellary/gellary';
 import SlideGellaryCoverDirections from '../../components/slide-gellary-cover/slide-gellary-cover-directions';
 import SlideGellaryCoverVacancies from '../../components/slide-gellary-cover/slide-gellary-cover-vacancies';
 import SlideGellaryCoverCandidates from '../../components/slide-gellary-cover/slide-gellary-cover-candidates';
+import DirectionMainCard from '../../components/direction-main-card/direction-main-card';
+import DirectionMainCardVacancy from '../../components/direction-main-card/direction-main-card-vacancy';
+import DirectionMainCardTime from '../../components/direction-main-card/direction-main-card-time';
+import { itemsCandidates } from '../../utils/arrays/items-candidates';
 
 function Main() {
   
@@ -20,9 +24,9 @@ function Main() {
         <Highlight text={"Хотят работать у вас"} notifications={200} icon={personal} boxType={'work'} />
       </Stack>
       <Stack mt={7.5} spacing={7.5} className={styles.galleries_container}>
-        <Gellary cover={<SlideGellaryCoverDirections />} />
-        <Gellary cover={<SlideGellaryCoverVacancies />} />
-        <Gellary cover={<SlideGellaryCoverCandidates />} />
+        <Gellary cover={<SlideGellaryCoverDirections />} card={DirectionMainCard} items={itemsCandidates} />
+        <Gellary cover={<SlideGellaryCoverVacancies />} card={DirectionMainCardVacancy} items={itemsCandidates} />
+        <Gellary cover={<SlideGellaryCoverCandidates />} card={DirectionMainCardTime} items={itemsCandidates} />
       </Stack>
     </>
   )

@@ -3,7 +3,7 @@ import { Paper, Stack, Typography } from "@mui/material";
 import React from "react";
 import styles from "./direction-main-card.module.css";
 
-function DirectionMainCard(props) {
+function DirectionMainCardTime(props) {
   const { item } = props;
 
   const cardStyle = {
@@ -104,4 +104,4 @@ function DirectionMainCard(props) {
   );
 }
 
-export default DirectionMainCard;
+export default DirectionMainCardTime;
