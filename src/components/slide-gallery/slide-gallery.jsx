@@ -96,7 +96,7 @@ function SlideGallery() {
           }}
         >
           {items.map((item, i) => (
-            <DirectionMainCard key={i} item={item} />
+            <DirectionMainCard key={i} item={item}  />
           ))}
         </Carousel>
       </Stack>

@@ -20,7 +20,7 @@ function SlideGellaryCoverVacancies () {
                 </Link>
             </Tooltip>
         </Stack>
-        <MainButton text="Все вакансии" />
+        <MainButton text="Мои вакансии" way="/vacancies"/>
     </Stack>
   )
 }
