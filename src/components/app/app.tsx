@@ -8,6 +8,7 @@ import NotFound from "../../pages/not-found/not-found";
 import styles from "./app.module.css";
 import Applications from "../../pages/applications/applications";
 import Vacancy from "../../pages/vacancies/vacancy";
+import Candidat from "../../pages/candidates/candidat";
 // import { ThemeProvider, createTheme } from "@mui/material";
 
 // const theme = createTheme({
@@ -27,6 +28,7 @@ function App() {
           <Route path="candidates" element={<Candidates />} />
           <Route path="/vacancies" element={<Vacancies />} />
           <Route path="/vacancies/vacancy" element={<Vacancy />} />
+          <Route path="/candidates/candidate" element={<Candidat />} />
           <Route path="applications" element={<Applications />} />
           <Route path="*" element={<NotFound />} />
         </Route>

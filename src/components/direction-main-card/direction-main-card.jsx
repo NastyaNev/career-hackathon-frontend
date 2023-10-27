@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 function DirectionMainCard(props) {
 
-  const { item, way } = props;
+  const { item, wayDirection } = props;
 
   const cardStyle = {
     width: 290,
@@ -68,24 +68,24 @@ function DirectionMainCard(props) {
   };
 
   return (
-<NavLink className={styles.card_link} to={way}>
-  <Link component="button" underline='none' sx={{'&:hover': {opacity: [0.9, 0.8, 0.7]}, display: 'flex', textAlign: 'start'}}>
-    <Paper elevation={3} square={false} sx={cardStyle}>
-      <Stack sx={{ padding: '24px' }}>
-        <div style={ divTopStyle }>
-          <Typography variant="body2" style={{ ...textTopStyle, marginRight: '12px' }}>Всего резюме:</Typography>
-          <Typography variant="body2" style={{ ...textTopStyle, marginRight: '2px' }}>{item.total}</Typography>
-          <Typography variant="body2" style={ textGreenrStyle }>{"+" + item.new}</Typography>
-        </div>
-        <Typography variant="h6" style={ textHeaderStyle }>{item.name}</Typography>
-        {item.skills.map((i) => (
-          <Typography variant="body2" style={ textDownStyle }>{i}</Typography>))
-        }
-      </Stack>
-      <img style={ imageStyle } src={item.image} alt="Изображение" />
-    </Paper>
-  </Link>
-</NavLink>
+  <NavLink className={styles.card_link} to={wayDirection}>
+    <Link component="button" underline='none' sx={{'&:hover': {opacity: [0.9, 0.8, 0.7]}, display: 'flex', textAlign: 'start'}}>
+      <Paper elevation={3} square={false} sx={cardStyle}>
+        <Stack sx={{ padding: '24px' }}>
+          <div style={ divTopStyle }>
+            <Typography variant="body2" style={{ ...textTopStyle, marginRight: '12px' }}>Всего резюме:</Typography>
+            <Typography variant="body2" style={{ ...textTopStyle, marginRight: '2px' }}>{item.total}</Typography>
+            <Typography variant="body2" style={ textGreenrStyle }>{"+" + item.new}</Typography>
+          </div>
+          <Typography variant="h6" style={ textHeaderStyle }>{item.name}</Typography>
+          {item.skills.map((i) => (
+            <Typography variant="body2" style={ textDownStyle }>{i}</Typography>))
+          }
+        </Stack>
+        <img style={ imageStyle } src={item.image} alt="Изображение" />
+      </Paper>
+    </Link>
+  </NavLink>
   );
 }
 
