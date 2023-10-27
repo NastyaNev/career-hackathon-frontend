@@ -1,6 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 import {Paper, Stack} from "@mui/material";
+import { Outlet } from 'react-router-dom';
 
 import {itemsVacancies} from "../../../utils/arrays/items-vacancies";
 
@@ -73,6 +74,11 @@ function Vacancy() {
           </div>
         </Stack>
       </Paper>
+      <Stack mb={3} mt={3} direction='row' spacing={2} >
+          <NavLink to="/vacancies/vacancy" end>Мои кандидаты</NavLink>
+          <NavLink to="/vacancies/vacancy/vacancy-applications">Отклики</NavLink>
+      </Stack>
+      <Outlet />
     </>
   )
 }
