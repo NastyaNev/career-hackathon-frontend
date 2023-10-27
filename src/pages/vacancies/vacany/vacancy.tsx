@@ -7,7 +7,7 @@ import {itemsVacancies} from "../../../utils/arrays/items-vacancies";
 import blackArrow from '../../../images/blackarrow.svg'
 import edit from '../../../images/edit.svg'
 import trash from '../../../images/trash.svg'
-import arrowDown from '../../../images/arrow_down.svg'
+import arrowDown from '../../../images/arrow_down_blue.svg'
 
 import styles from './styles.module.css'
 
