@@ -1,0 +1,32 @@
+.tabContainer__item {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 4px;
+  cursor: pointer;
+  color: #000;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.tabContainer__text {
+  width: max-content;
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.tabContainer__number {
+  background: #797981;
+  border-radius: 8px;
+  min-width: 21px;
+  height: 16px;
+  color: #FFF;
+  text-align: center;
+  font-size: 11px;
+}
+
+.tabContainer__number__important {
+  background: #FF0200;
+}

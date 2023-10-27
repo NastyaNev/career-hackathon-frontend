@@ -7,7 +7,7 @@ import Candidates from "../../pages/candidates/candidates";
 import NotFound from "../../pages/not-found/not-found";
 import styles from "./app.module.css";
 import Applications from "../../pages/applications/applications";
-import Vacancy from "../../pages/vacancies/vacancy";
+import Vacancy from "../../pages/vacancies/vacany/vacancy";
 import Candidat from "../../pages/candidates/candidat";
 // import { ThemeProvider, createTheme } from "@mui/material";
 
