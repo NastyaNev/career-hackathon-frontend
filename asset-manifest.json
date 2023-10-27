@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/career-hackathon-frontend/static/css/main.4840d05d.css",
-    "main.js": "/career-hackathon-frontend/static/js/main.b70bd582.js",
+    "main.css": "/career-hackathon-frontend/static/css/main.35ed6394.css",
+    "main.js": "/career-hackathon-frontend/static/js/main.18d722b6.js",
     "static/media/avatar.jpg": "/career-hackathon-frontend/static/media/avatar.9f37c61701732f4ca63b.jpg",
     "static/media/YSText-BoldItalic.woff": "/career-hackathon-frontend/static/media/YSText-BoldItalic.b7afee06b16b9622ee26.woff",
     "static/media/YSText-MediumItalic.woff": "/career-hackathon-frontend/static/media/YSText-MediumItalic.541c0ed003a7f09f0983.woff",
@@ -36,17 +36,21 @@
     "static/media/messages.svg": "/career-hackathon-frontend/static/media/messages.3980acbe8cef4466f9cb33c64e345553.svg",
     "static/media/personal.svg": "/career-hackathon-frontend/static/media/personal.9e5311828e3616cf03516cca651a6bfa.svg",
     "static/media/exit.svg": "/career-hackathon-frontend/static/media/exit.b56d3382239e1b15c0805b77cfd77472.svg",
+    "static/media/Like.svg": "/career-hackathon-frontend/static/media/Like.de6aa1376cf01732e7a008c52f8ff68e.svg",
     "index.html": "/career-hackathon-frontend/index.html",
     "static/media/arrow_right.svg": "/career-hackathon-frontend/static/media/arrow_right.7d917be733a4998675be8223a9e5e7bc.svg",
+    "static/media/map-pin.svg": "/career-hackathon-frontend/static/media/map-pin.a991e29adb5fdbf1ec0e0c985df2b791.svg",
     "static/media/arrow_left.svg": "/career-hackathon-frontend/static/media/arrow_left.204c3863d9fef86a6ec3d21692da361e.svg",
     "static/media/list.svg": "/career-hackathon-frontend/static/media/list.ca9fcc6024afc20f4d54b6eaef66205d.svg",
+    "static/media/award.svg": "/career-hackathon-frontend/static/media/award.712f43fd73bb1054bcb727be6de8bb33.svg",
+    "static/media/briefcase.svg": "/career-hackathon-frontend/static/media/briefcase.eb69726812a671c0450abc065cb2459d.svg",
     "static/media/clock.svg": "/career-hackathon-frontend/static/media/clock.f0cc1b055de93e9dd69d649cf0e70396.svg",
     "static/media/plus.svg": "/career-hackathon-frontend/static/media/plus.c810b6c24fae34f202efeb9919b40394.svg",
-    "main.4840d05d.css.map": "/career-hackathon-frontend/static/css/main.4840d05d.css.map",
-    "main.b70bd582.js.map": "/career-hackathon-frontend/static/js/main.b70bd582.js.map"
+    "main.35ed6394.css.map": "/career-hackathon-frontend/static/css/main.35ed6394.css.map",
+    "main.18d722b6.js.map": "/career-hackathon-frontend/static/js/main.18d722b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.4840d05d.css",
-    "static/js/main.b70bd582.js"
+    "static/css/main.35ed6394.css",
+    "static/js/main.18d722b6.js"
   ]
 }
