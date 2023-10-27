@@ -2,6 +2,8 @@
 import { Paper, Stack, Typography } from "@mui/material";
 import React from "react";
 import styles from "./direction-main-card.module.css";
+import pin from "../../images/map-pin.svg";
+import suitcase from "../../images/briefcase.svg";
 
 function DirectionMainCardVacancy(props) {
   const { item } = props;
@@ -46,8 +48,9 @@ function DirectionMainCardVacancy(props) {
     fontFamily: 'YS Display',
     fontWeight: '500',
     fontSize: '20px',
-    height: '24px',
-    marginBottom: '8px'
+    marginBottom: '14px',
+    marginTop: '12px',
+    lineHeight: '24px'
   };
 
   const textTopStyle = {
@@ -70,10 +73,12 @@ function DirectionMainCardVacancy(props) {
     color: '#FFF',
     fontWeight: '500',
     fontSize: '11px',
-    lineHeight: '12px',
+    lineHeight: '14px',
     backgroundColor: '#FF0200',
-    borderRadius: '50%',
-    padding: '2px 4px'
+    borderRadius: '10px',
+    padding: '2px 4px',
+    borderRadius: '10px',
+    height: '14px'
   }
 
 
@@ -86,20 +91,20 @@ function DirectionMainCardVacancy(props) {
           <Typography variant="body2" style={ textRedStyle }>+12</Typography>
         </div>
         <div>
-          <Typography variant="body2" style={ textTopStyle }>Сбербанк</Typography>
-          <Typography variant="h6" style={ textHeaderStyle }>{item.name}</Typography>
+          <Typography variant="body2" style={ textTopStyle }>{item.company}</Typography>
+          <Typography variant="h6" style={ textHeaderStyle } mb={1.5}>{item.name}</Typography>
           <div style={ divProfileStyle } >
-            <img/> {/* нужно добавить иконку и свойства*/}
-            <Typography variant="body2" style={ textDownStyle }>{item.description}</Typography>
+            <img src={pin} alt="локация" />
+            <Typography variant="body2" style={ textDownStyle } ml={1}>{item.city}</Typography>
           </div>
           <div style={ divProfileStyle }>
-            <img/> {/* нужно добавить иконку и */}
-            <Typography variant="body2" style={ textDownStyle }>{item.description}</Typography>
+          <img src={suitcase} alt="чемодан" />
+            <Typography variant="body2" style={ textDownStyle } ml={1}>{"от " + item.experience + " лет"}</Typography>
           </div>
         </div>
         <div style={ divDownStyle }>
           <Typography variant="body2" style={{ ...textDownStyle, marginRight: '12px' }}>Обновлено:</Typography>
-          <Typography variant="body2" style={ textDownStyle }>вчера</Typography>
+          <Typography variant="body2" style={ textDownStyle }>вчера, 20.10.23</Typography>
         </div>
       </Stack>
     </Paper>

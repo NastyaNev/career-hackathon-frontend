@@ -1,7 +1,11 @@
 // Карусель с просмотренными кандидатами
-import { Paper, Stack, Typography } from "@mui/material";
+import { Avatar, Paper, Stack, Typography } from "@mui/material";
 import React from "react";
 import styles from "./direction-main-card.module.css";
+import pin from "../../images/map-pin.svg";
+import suitcase from "../../images/briefcase.svg";
+import like from "../../images/Like.svg";
+import medal from "../../images/award.svg";
 
 function DirectionMainCardTime(props) {
   const { item } = props;
@@ -19,11 +23,18 @@ function DirectionMainCardTime(props) {
     lexDirection: 'column'
   };
 
-  const divProfileStyle = {
+  const divProfileStyleTop = {
+    display: 'flex',
+    alignItems: 'center',
+    height: '12px',
+    marginTop: '12px'
+  };
+
+  const divProfileStyleBottom = {
     display: 'flex',
     alignItems: 'center',
     height: '16px',
-    marginBottom: '4px'
+    marginTop: '4px'
   };
 
   const divDownStyle = {
@@ -38,8 +49,7 @@ function DirectionMainCardTime(props) {
     fontFamily: 'YS Display',
     fontWeight: '500',
     fontSize: '20px',
-    height: '24px',
-    marginBottom: '8px'
+    lineHeight: '24px'
   };
 
   const textTopGreenStyle = {
@@ -54,8 +64,15 @@ function DirectionMainCardTime(props) {
     fontFamily: 'YS Text',
     fontWeight: '400',
     fontSize: '11px',
+    lineHeight: '12px',
+  };
+
+  const textDownStyleProf = {
+    color: '#797981',
+    fontFamily: 'YS Text',
+    fontWeight: '400',
+    fontSize: '11px',
     height: '12px',
-    marginBottom: '4px'
   };
 
   const textVioletStyle = {
@@ -63,41 +80,47 @@ function DirectionMainCardTime(props) {
     color: '#FFF',
     fontWeight: '500',
     fontSize: '11px',
-    lineHeight: '16px',
     backgroundColor: '#7F67D2',
-    borderRadius: '50%',
+    borderRadius: '10px',
     marginTop: '12px',
     padding: '2px 4px',
-    display: 'inline-block'
+    display: 'inline-block',
+    lineHeight: '12px',
+    borderRadius: '10px',
+    padding: '2px 4px'    
   }
 
   return (
     <Paper elevation={3} square={false} sx={cardStyle}>
       <Stack sx={ stackStyle }>
         <div>
-          <Typography variant="body2" style={ textTopGreenStyle }>&#9679; была сегодня</Typography>
-          <div>
-            <img/> {/* нужно добавить аватар их массива*/}
+          <Stack direction='row' justifyContent='space-between' sx={{width: 224}}> 
+            <Typography variant="body2" style={ textTopGreenStyle }>&#9679; была сегодня</Typography>
+            <img src={like} alt="лайк" />
+          </Stack>
+          <Stack direction='row' spacing={2} sx={{alignItems: 'center'}} mt={1}>
+            <Avatar src={item.avatar} alt="аватар" />
             <div>
               <Typography variant="h6" style={ textHeaderStyle }>{item.name}</Typography>
-              <Typography variant="body2" style={ textDownStyle }>{item.description}</Typography>
+              <Typography variant="body2" style={ textDownStyleProf }>{item.profession}</Typography>
             </div>
+          </Stack>
+            <div style={ divProfileStyleTop }>
+              <img src={pin} alt="локация" />
+              <Typography variant="body2" style={ textDownStyleProf } ml={1}>{item.city}</Typography>
           </div>
-            <div style={ divProfileStyle }>
-            <img/> {/* нужно добавить иконку и свойства*/}
-              <Typography variant="body2" style={ textDownStyle }>{item.description}</Typography>
+          <div style={ divProfileStyleBottom }>
+          <img src={suitcase} alt="чемодан" />
+            <Typography variant="body2" style={ textDownStyleProf } ml={1}>{item.prev}</Typography>
           </div>
-          <div style={ divProfileStyle }>
-            <img/> {/* нужно добавить иконку и свойства */}
-            <Typography variant="body2" style={ textDownStyle }>{item.description}</Typography>
-          </div>
-          <div>
-            <Typography variant="body2" style={ textVioletStyle }>+12 лет</Typography>
-          </div>
+          <Stack direction='row' alignItems='center' spacing={2}>
+            <Typography variant="body2" style={{ ...textVioletStyle, marginTop: '16px', marginBottom: '20px' }}>+12 лет</Typography>
+            <img src={medal} alt="награда" />
+          </Stack>
         </div>
         <div style={ divDownStyle }>
           <Typography variant="body2" style={{ ...textDownStyle, marginRight: '12px' }}>Просмотренно:</Typography>
-          <Typography variant="body2" style={ textDownStyle }>вчера</Typography>
+          <Typography variant="body2" style={ textDownStyle }>вчера, 20.10.23</Typography>
         </div>
       </Stack>
     </Paper>

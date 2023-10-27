@@ -3,8 +3,6 @@ import analiz from '../../images/jobs/Img_analytics.jpg';
 import design from '../../images/jobs/Img_design.jpg';
 import manage from '../../images/jobs/image_47.jpg';
 
-
-
 export const itemsCandidates = [
     {
       name: "Программирование",

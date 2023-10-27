@@ -10,6 +10,7 @@ function DirectionMainCard(props) {
     width: 290,
     height: 230,
     boxShadow: "0 0 10px 0 4px 6px rgba(176, 190, 197, 0.3)",
+    position: 'relative'
   };
 
   const imageStyle = {
@@ -56,27 +57,16 @@ function DirectionMainCard(props) {
     color: '#FFF',
     fontWeight: '500',
     fontSize: '11px',
-    lineHeight: '16px',
+    lineHeight: '14px',
     backgroundColor: '#87CC9E',
     borderRadius: '10px',
     padding: '2px 4px',
     height: '14px',
-
   };
-
-  const imgStyle = {
-    with: '100px',
-    height: '76px'
-  }
 
   return (
     <Paper elevation={3} square={false} sx={cardStyle}>
       <Stack sx={{ padding: '24px' }}>
-        <img style={ imgStyle }
-          src={item.image}
-          alt="Изображение"
-          style={imageStyle}
-        />
         <div style={ divTopStyle }>
           <Typography variant="body2" style={{ ...textTopStyle, marginRight: '12px' }}>Всего резюме:</Typography>
           <Typography variant="body2" style={{ ...textTopStyle, marginRight: '2px' }}>{item.total}</Typography>
@@ -87,6 +77,7 @@ function DirectionMainCard(props) {
           <Typography variant="body2" style={ textDownStyle }>{i}</Typography>))
         }
       </Stack>
+      <img style={ imageStyle } src={item.image} alt="Изображение" />
     </Paper>
   );
 }

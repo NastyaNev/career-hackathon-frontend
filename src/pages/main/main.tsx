@@ -13,6 +13,8 @@ import DirectionMainCard from '../../components/direction-main-card/direction-ma
 import DirectionMainCardVacancy from '../../components/direction-main-card/direction-main-card-vacancy';
 import DirectionMainCardTime from '../../components/direction-main-card/direction-main-card-time';
 import { itemsCandidates } from '../../utils/arrays/items-candidates';
+import { itemsVacancies } from '../../utils/arrays/items-vacancies';
+import { itemsTime } from '../../utils/arrays/items-time';
 
 function Main() {
   
@@ -25,8 +27,8 @@ function Main() {
       </Stack>
       <Stack mt={7.5} spacing={7.5} className={styles.galleries_container}>
         <Gellary cover={<SlideGellaryCoverDirections />} card={DirectionMainCard} items={itemsCandidates} />
-        <Gellary cover={<SlideGellaryCoverVacancies />} card={DirectionMainCardVacancy} items={itemsCandidates} />
-        <Gellary cover={<SlideGellaryCoverCandidates />} card={DirectionMainCardTime} items={itemsCandidates} />
+        <Gellary cover={<SlideGellaryCoverVacancies />} card={DirectionMainCardVacancy} items={itemsVacancies} />
+        <Gellary cover={<SlideGellaryCoverCandidates />} card={DirectionMainCardTime} items={itemsTime} />
       </Stack>
     </>
   )
