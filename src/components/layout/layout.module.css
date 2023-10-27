@@ -11,8 +11,21 @@
     z-index: 0;
 }
 
+.other_pages {
+    display: flex;
+    flex-direction: column;
+    width: 1260px;
+    margin: 112px auto 0 auto;
+    z-index: 0;
+}
+
 @media (max-width: 1479px) {
     .main {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .other_pages {
         margin-left: auto;
         margin-right: 0;
     }
@@ -20,6 +33,11 @@
 
 @media (max-width: 1439px) {
     .main {
+        margin-left: 40px;
+        width: calc(100vw - 200px);
+    }
+
+    .other_pages {
         margin-left: 40px;
         width: calc(100vw - 200px);
     }

@@ -4,14 +4,17 @@ import { Outlet } from "react-router";
 import styles from "./layout.module.css";
 import Sidebar from "../sidebar/sidebar";
 import { Stack } from "@mui/material";
+import { useLocation } from 'react-router-dom';
 
 function Layout() {
+  const { pathname } = useLocation();
+
   return (
     <Stack direction='row'>
       <Sidebar />
       <Stack className={styles.main_container}>
         <AppHeader />
-        <main className={styles.main}>
+        <main className={pathname === "/" ? styles.main : styles.other_pages }>
           <Outlet />
         </main>
       </Stack>
