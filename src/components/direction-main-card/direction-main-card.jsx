@@ -9,7 +9,7 @@ function DirectionMainCard(props) {
   const { item, way } = props;
 
   return (
-    <NavLink to={way}>
+    <NavLink className={styles.card_link} to={way}>
       <Link component="button" underline='none' sx={{'&:hover': {opacity: [0.9, 0.8, 0.7]}, display: 'flex', textAlign: 'start'}}>
         <Paper elevation={3} square={false} sx={{width: 290, height: 230, alignSelf: 'center'}}>
           <h2>{item.name}</h2>
