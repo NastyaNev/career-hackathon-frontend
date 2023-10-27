@@ -2,6 +2,8 @@ import React from 'react';
 import { Stack, Typography } from "@mui/material";
 import MainButton from '../../components/main-button/main-button';
 import ButtonPlus from 'components/button-plus/button-plus ';
+import plus from '../../images/plus.svg';
+
 
 function SlideGellaryCoverVacancies () {
     
@@ -11,7 +13,7 @@ function SlideGellaryCoverVacancies () {
         <Stack direction='row'>
             <Typography mr={2} sx={{fontFamily: 'YS Display', fontSize: '34px', fontStyle: 'normal', fontWeight: 500, lineHeight: '40px'}}>
             Мои вакансии</Typography>
-            <ButtonPlus />
+            <ButtonPlus image={plus}/>
         </Stack>
         <MainButton text="Мои вакансии" way="/vacancies"/>
     </Stack>
