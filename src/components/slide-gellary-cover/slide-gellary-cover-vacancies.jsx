@@ -7,6 +7,7 @@ function SlideGellaryCoverVacancies () {
     
   return (
     <Stack direction="row" useFlexGap justifyContent="space-between" alignItems="center" mb={2.375} >
+        
         <Stack direction='row'>
             <Typography mr={2} sx={{fontFamily: 'YS Display', fontSize: '34px', fontStyle: 'normal', fontWeight: 500, lineHeight: '40px'}}>
             Мои вакансии</Typography>
@@ -20,7 +21,7 @@ function SlideGellaryCoverVacancies () {
                 </Link>
             </Tooltip>
         </Stack>
-        <MainButton text="Все вакансии" />
+        <MainButton text="Мои вакансии" way="/vacancies"/>
     </Stack>
   )
 }

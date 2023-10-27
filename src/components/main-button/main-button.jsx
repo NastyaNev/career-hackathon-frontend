@@ -1,8 +1,9 @@
 import React from 'react';
 import { Button } from "@mui/material";
 import { styled } from '@mui/material/styles';
+import { NavLink } from 'react-router-dom';
 
-function MainButton ({ text }) {
+function MainButton ({ text, way }) {
 
     const ButtonForMain = styled(Button)({
         width: 140, 
@@ -17,9 +18,11 @@ function MainButton ({ text }) {
       });
 
   return (
-    <ButtonForMain variant="outlined" >
-        {text}
-    </ButtonForMain>
+    <NavLink to={way} >
+      <ButtonForMain variant="outlined" >
+          {text}
+      </ButtonForMain>
+    </NavLink>
   )
 }
 

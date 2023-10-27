@@ -2,9 +2,12 @@
 import { Paper, Stack, Typography } from "@mui/material";
 import React from "react";
 import styles from "./direction-main-card.module.css";
+import { Link } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 function DirectionMainCard(props) {
-  const { item } = props;
+
+  const { item, way } = props;
 
   const cardStyle = {
     width: 290,
@@ -65,6 +68,8 @@ function DirectionMainCard(props) {
   };
 
   return (
+<NavLink className={styles.card_link} to={way}>
+  <Link component="button" underline='none' sx={{'&:hover': {opacity: [0.9, 0.8, 0.7]}, display: 'flex', textAlign: 'start'}}>
     <Paper elevation={3} square={false} sx={cardStyle}>
       <Stack sx={{ padding: '24px' }}>
         <div style={ divTopStyle }>
@@ -79,6 +84,8 @@ function DirectionMainCard(props) {
       </Stack>
       <img style={ imageStyle } src={item.image} alt="Изображение" />
     </Paper>
+  </Link>
+</NavLink>
   );
 }
 
