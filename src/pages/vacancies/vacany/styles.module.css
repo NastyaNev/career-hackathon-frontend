@@ -6,8 +6,20 @@
   flex-direction: row;
 }
 
+.back {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.back:hover {
+  opacity: 0.6;
+}
+
 .wrapper {
-  width: 1220px;
+  width: calc(100vw - 220px);
+  max-width: 1220px;
   max-height: max-content;
   border-radius: 6px;
   box-sizing: border-box;
@@ -35,7 +47,10 @@
 }
 
 .vacancy {
+  font-family: YS Display;
   font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
   margin: 0;
   padding: 0;
 }
@@ -50,6 +65,11 @@
 
 .button {
   cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.6;
 }
 
 .find {
@@ -58,20 +78,28 @@
   border: none;
   border-radius: 6px;
   padding: 15px 60px;
-  font-size: 16px;
-  line-height: 20px;
-  width: max-content;
+  max-width: 250px;
   font-weight: bold;
   cursor: pointer;
   max-height: 50px;
   margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.find:hover {
+  opacity: 0.6;
 }
 
 .company {
   color: #797981;
-  font-size: 14px;
   margin: 0;
   padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .conditions {
@@ -85,19 +113,28 @@
 
 .condition {
   padding: 6px 12px;
-  font-weight: bold;
   background-color: #F2F2F2;
   text-align: center;
   color: #797981;
   font-size: 11px;
+  font-weight: 500;
   line-height: 12px;
+  border-radius: 2px;
+  min-width: 60px;
 }
 
 .open {
   justify-self: flex-end;
   font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
   color: #1D6BF3;
   padding: 4px 0 0 0;
   margin: 0;
   cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.open:hover {
+  opacity: 0.6;
 }

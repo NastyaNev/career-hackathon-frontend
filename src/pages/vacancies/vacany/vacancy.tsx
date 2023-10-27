@@ -27,9 +27,9 @@ function Vacancy() {
     <>
       <NavLink to="/vacancies" className={styles.link}>
         <img src={blackArrow} alt="Стрелочка"/>
-        <p>Назад в Мои вакансии</p>
+        <p className={styles.back}>Мои вакансии</p>
       </NavLink>
-      <Paper className={styles.wrapper} elevation={1}>
+      <Paper className={styles.wrapper} elevation={3}>
         <Stack display={"flex"} flexDirection={"column"}>
           <span className={styles.description}>
             <span className={styles.container}>

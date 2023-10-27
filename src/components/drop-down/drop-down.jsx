@@ -29,7 +29,7 @@ function App() {
         renderValue={(selected) => selected.join(", ")}
         MenuProps={MenuProps}
         displayEmpty
-        IconComponent
+        // IconComponent
         variant="filled"
       >
         <MenuItem
