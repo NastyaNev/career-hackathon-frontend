@@ -1,9 +1,10 @@
 import React from 'react'
-import {Button, ButtonGroup, Stack, TextField } from "@mui/material";
+import {Button, ButtonGroup, Stack } from "@mui/material";
 import styles from './application.module.css';
 
 import PageSubMenu from "../../components/ui/page-sub-menu/PageSubMenu";
 import PageSubMenuLink from "../../components/ui/page-sub-menu-link/PageSubMenuLink";
+import SearchInput from '../../components/search-input/search-input';
 
 function Applications() {
   console.log('class', styles['new-class-input'])
@@ -35,16 +36,11 @@ function Applications() {
         }
         />
           <div className={styles.filters}>
-              <TextField InputProps={{classes: {
-                input: styles['new-class-input']
-              }}}
-                  sx={{padding: `8px 12px`}}
-                  className={styles.find}>
-              </TextField>
-              <ButtonGroup className={styles.buttons}>
-                  <Button className={styles.button}></Button>
-                  <Button className={styles.button}></Button>
-              </ButtonGroup>
+            <SearchInput className={styles.search} />
+            <ButtonGroup className={styles.buttons}>
+                <Button className={styles.button}></Button>
+                <Button className={styles.button}></Button>
+            </ButtonGroup>
           </div>
       </Stack>
     </main>
