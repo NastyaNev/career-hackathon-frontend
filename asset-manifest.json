@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/career-hackathon-frontend/static/css/main.1580aab7.css",
-    "main.js": "/career-hackathon-frontend/static/js/main.904ca244.js",
+    "main.js": "/career-hackathon-frontend/static/js/main.1df6e681.js",
     "static/media/avatar.jpg": "/career-hackathon-frontend/static/media/avatar.9f37c61701732f4ca63b.jpg",
     "static/media/YSText-BoldItalic.woff": "/career-hackathon-frontend/static/media/YSText-BoldItalic.b7afee06b16b9622ee26.woff",
     "static/media/YSText-MediumItalic.woff": "/career-hackathon-frontend/static/media/YSText-MediumItalic.541c0ed003a7f09f0983.woff",
@@ -40,7 +40,7 @@
     "static/media/Like.svg": "/career-hackathon-frontend/static/media/Like.de6aa1376cf01732e7a008c52f8ff68e.svg",
     "static/media/edit.svg": "/career-hackathon-frontend/static/media/edit.1bbb228cf14dec1cfd067b7fd12e6e39.svg",
     "static/media/search.svg": "/career-hackathon-frontend/static/media/search.f46822a161e21b1a8fce2e87b4de32a6.svg",
-    "static/media/close.svg": "/career-hackathon-frontend/static/media/close.72e45e48c0b442e5f50d21a12ee8f838.svg",
+    "static/media/close.svg": "/career-hackathon-frontend/static/media/close.e75daf463aee59c2b46e9371df663650.svg",
     "index.html": "/career-hackathon-frontend/index.html",
     "static/media/arrow_right.svg": "/career-hackathon-frontend/static/media/arrow_right.baac8780e9f2ee9de338e170adc23478.svg",
     "static/media/map-pin.svg": "/career-hackathon-frontend/static/media/map-pin.a991e29adb5fdbf1ec0e0c985df2b791.svg",
@@ -55,10 +55,10 @@
     "static/media/blackarrow.svg": "/career-hackathon-frontend/static/media/blackarrow.c91bdabbbbd26b3c56a144d88e914813.svg",
     "static/media/plus.svg": "/career-hackathon-frontend/static/media/plus.c810b6c24fae34f202efeb9919b40394.svg",
     "main.1580aab7.css.map": "/career-hackathon-frontend/static/css/main.1580aab7.css.map",
-    "main.904ca244.js.map": "/career-hackathon-frontend/static/js/main.904ca244.js.map"
+    "main.1df6e681.js.map": "/career-hackathon-frontend/static/js/main.1df6e681.js.map"
   },
   "entrypoints": [
     "static/css/main.1580aab7.css",
-    "static/js/main.904ca244.js"
+    "static/js/main.1df6e681.js"
   ]
 }
