@@ -18,6 +18,7 @@
 }
 
 .tabContainer__number {
+  padding-top: 2px;
   background: #797981;
   border-radius: 8px;
   min-width: 21px;
