@@ -41,7 +41,7 @@ function SearchInput({className}) {
               >
                 <img className={styles.image} src={close} alt='Закрыть' />
               </InputAdornment>
-            ) : null 
+            ) : null
           }}
         />
       </FormControl>

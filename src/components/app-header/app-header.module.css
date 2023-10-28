@@ -17,3 +17,7 @@
     width: 40px;
     border-radius: 50%;
 }
+
+.new_class {
+    color: black !important;
+}

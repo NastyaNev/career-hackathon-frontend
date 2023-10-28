@@ -6,53 +6,12 @@ import Carousel, { consts } from "react-elastic-carousel";
 import SlideGalleryArrow from "./slide-gallery-arrow/slide-gallery-arrow";
 import RenderComponent from "./render-component/render-component";
 
-function SlideGallery() {
+function SlideGallery({ card, items }) {
+  const Card = card;
+
   const carousel = useRef();
   const [disabledPrevArrow, setDisabledPrevArrow] = useState(true);
   const [disabledNextArrow, setDisabledNextArrow] = useState(true);
-
-  const items = [
-    {
-      name: "Random Name 1",
-      description: "Probably the most random thing you have ever seen!",
-    },
-    {
-      name: "Random Name 2",
-      description: "Hello World!",
-    },
-    {
-      name: "Random Name 3",
-      description: "Probably the most random thing you have ever seen!",
-    },
-    {
-      name: "Random Name 4",
-      description: "Hello World!",
-    },
-    {
-      name: "Random Name 5",
-      description: "Probably the most random thing you have ever seen!",
-    },
-    {
-      name: "Random Name 6",
-      description: "Hello World!",
-    },
-    {
-      name: "Random Name 7",
-      description: "Probably the most random thing you have ever seen!",
-    },
-    {
-      name: "Random Name 8",
-      description: "Hello World!",
-    },
-    {
-      name: "Random Name 9",
-      description: "Probably the most random thing you have ever seen!",
-    },
-    {
-      name: "Random Name #10",
-      description: "Hello World!",
-    }
-  ];
 
   return (
     <Stack className={styles.carousel_container}>
@@ -96,7 +55,7 @@ function SlideGallery() {
           }}
         >
           {items.map((item, i) => (
-            <DirectionMainCard key={i} item={item} />
+            <Card key={i} item={item} wayDirection='#' wayVacancies='/vacancies/vacancy' wayTime='/candidates/candidate'/>
           ))}
         </Carousel>
       </Stack>

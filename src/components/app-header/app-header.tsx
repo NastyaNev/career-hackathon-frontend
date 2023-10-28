@@ -3,14 +3,28 @@ import styles from "./app-header.module.css";
 import hand from "../../images/hand.svg";
 import messages from "../../images/messages.svg";
 import IconButton from "@mui/material/Button";
-import { Stack, Tooltip } from "@mui/material";
+import { Box, FormControl, FormHelperText, InputAdornment, InputLabel, OutlinedInput, Stack, TextField, Tooltip, Typography } from "@mui/material";
 import search from '../../images/YaGPT.svg';
+import icon from '../../images/arrow.svg';
 
 function AppHeader() {
   return (
     <header className={styles.header_background}>
       <Stack direction="row" useFlexGap justifyContent='space-between' alignItems='center' className={styles.header_content}>
         <Stack>
+        {/* <FormControl sx={{ width: '25ch', backgroundColor: "white", borderRadius: '15px', height: 40, color: '#b5b5b7 !important' }} >
+        <InputLabel disableAnimation sx={{fontFamily: 'YS Text', fontSize: '11px', fontWeight: 400, lineHeight: '12px'}}>Напиши мне</InputLabel>
+          <OutlinedInput
+            id="outlined-adornment-password"
+            endAdornment={
+              <InputAdornment position="end">
+                <Box sx={{height: 40, marginTop: '5px'}}>
+                  <img src={icon} />
+                </Box>
+              </InputAdornment>
+            }
+          />
+        </FormControl> */}
             <img src={search} alt="поиск с Алисой" />
         </Stack>
         <Stack direction="row" useFlexGap justifyContent='flex-end' alignItems='center' className={styles.header_content}>

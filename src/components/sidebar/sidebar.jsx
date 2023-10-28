@@ -22,8 +22,8 @@ function Sidebar() {
         <Stack ml={1} mt={5} sx={{ height: 'calc(100vh - 196px)' }} useFlexGap justifyContent='space-between' >
           <Stack spacing={2.5}>
             <HeaderLink linkText="Главная" link="/" />
-            <HeaderLink linkText="Мои вакансии" link="/vacancies" />
             <HeaderLink linkText="Все кандидаты" link="/candidates" />
+            <HeaderLink linkText="Мои вакансии" link="/vacancies" />
             <HeaderLink linkText="Отклики" link="/applications" />
           </Stack>
           <Link href="#" underline='none' mb={2.5} sx={{'&:hover': {opacity: [0.9, 0.8, 0.7]}, display: 'flex',  flexDirection: 'row', gap: '1.5px'}} >

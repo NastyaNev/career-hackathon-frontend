@@ -1,0 +1,140 @@
+.link {
+  text-decoration: none;
+  gap: 4px;
+  color: #1A1B22;
+  display: flex;
+  flex-direction: row;
+}
+
+.back {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.back:hover {
+  opacity: 0.6;
+}
+
+.wrapper {
+  width: calc(100vw - 220px);
+  max-width: 1220px;
+  max-height: max-content;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  justify-content: space-between;
+}
+
+.description {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.vacancy {
+  font-family: YS Display;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.button {
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.find {
+  color: #FFF;
+  background-image: linear-gradient(to right, #B026FF, #6626FF);
+  border: none;
+  border-radius: 6px;
+  padding: 15px 60px;
+  max-width: 250px;
+  font-weight: bold;
+  cursor: pointer;
+  max-height: 50px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.find:hover {
+  opacity: 0.6;
+}
+
+.company {
+  color: #797981;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.conditions {
+  gap: 12px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.condition {
+  padding: 6px 12px;
+  background-color: #F2F2F2;
+  text-align: center;
+  color: #797981;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 12px;
+  border-radius: 2px;
+  min-width: 60px;
+}
+
+.open {
+  justify-self: flex-end;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #1D6BF3;
+  padding: 4px 0 0 0;
+  margin: 0;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.open:hover {
+  opacity: 0.6;
+}
