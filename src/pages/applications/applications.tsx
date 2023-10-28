@@ -5,6 +5,9 @@ import styles from './application.module.css';
 import PageSubMenu from "../../components/ui/page-sub-menu/PageSubMenu";
 import PageSubMenuLink from "../../components/ui/page-sub-menu-link/PageSubMenuLink";
 import SearchInput from '../../components/search-input/search-input';
+import ButtonPlus from '../../components/button-plus/button-plus';
+import table from '../../images/view-table.svg';
+import grid from '../../images/view-grid.svg';
 
 function Applications() {
   console.log('class', styles['new-class-input'])
@@ -38,8 +41,11 @@ function Applications() {
           <div className={styles.filters}>
             <SearchInput className={styles.search} />
             <ButtonGroup className={styles.buttons}>
-                <Button className={styles.button}></Button>
-                <Button className={styles.button}></Button>
+              <ButtonPlus image={table} className={styles.button} text='Вид: Таблица'/>
+              <ButtonPlus image={grid} className={styles.button} text='Вид: Сетка' />
+
+                {/* <Button className={styles.button}></Button>
+                <Button className={styles.button}></Button> */}
             </ButtonGroup>
           </div>
       </Stack>
