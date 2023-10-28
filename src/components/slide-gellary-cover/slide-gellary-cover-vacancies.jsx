@@ -13,7 +13,7 @@ function SlideGellaryCoverVacancies () {
         <Stack direction='row'>
             <Typography mr={2} sx={{fontFamily: 'YS Display', fontSize: '34px', fontStyle: 'normal', fontWeight: 500, lineHeight: '40px'}}>
             Мои вакансии</Typography>
-            <ButtonPlus image={plus}/>
+            <ButtonPlus image={plus} text="Добавить" />
         </Stack>
         <MainButton text="Мои вакансии" way="/vacancies"/>
     </Stack>
