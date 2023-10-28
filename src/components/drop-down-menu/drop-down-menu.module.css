@@ -1,0 +1,26 @@
+.arrow {
+    margin-right: 8px ;
+}
+
+.select {
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.select:hover {
+    opacity: 0.6;
+}
+
+.options {
+    font-family: YS Text !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+}
+
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
