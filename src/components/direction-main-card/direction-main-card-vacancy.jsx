@@ -78,7 +78,7 @@ function DirectionMainCardVacancy(props) {
     lineHeight: '14px',
     backgroundColor: '#FF0200',
     borderRadius: '10px',
-    padding: '2px 4px',
+    padding: '2px 4px 1px 4px',
     height: '14px'
   }
 

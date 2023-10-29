@@ -63,8 +63,8 @@ function DirectionMainCard(props) {
     lineHeight: '14px',
     backgroundColor: '#87CC9E',
     borderRadius: '10px',
-    padding: '2px 4px',
-    height: '14px',
+    padding: '2px 4px 1px 4px',
+    lineHight: '14px'
   };
 
   return (

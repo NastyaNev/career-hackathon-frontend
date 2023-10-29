@@ -17,6 +17,7 @@ function Applications() {
       <Stack
         direction={'row'}
         justifyContent={'space-between'}
+        mb={2.5}
       >
         <PageSubMenu links={
           <>
