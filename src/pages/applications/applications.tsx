@@ -20,18 +20,18 @@ function Applications() {
         <PageSubMenu links={
           <>
             <PageSubMenuLink
-              to={'/'}
+              to={'./actual'}
               text={'Акутальные'}
               notifications={80}
             />
             <PageSubMenuLink
-              to={'/'}
+              to={'./new'}
               text={'Новые'}
               notifications={12}
               isImportant={true}
             />
             <PageSubMenuLink
-              to={'/'}
+              to={'./applications-archive'}
               text={'Архив'}
             />
           </>
@@ -42,9 +42,6 @@ function Applications() {
             <ButtonGroup className={styles.buttons}>
               <ButtonPlus image={table} className={styles.button} text='Вид: Таблица'/>
               <ButtonPlus image={grid} className={styles.button} text='Вид: Сетка' />
-
-                {/* <Button className={styles.button}></Button>
-                <Button className={styles.button}></Button> */}
             </ButtonGroup>
           </div>
       </Stack>

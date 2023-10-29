@@ -1,5 +1,12 @@
+.tabContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
 .tabContainer__item {
   display: flex;
+  flex-direction: row;
   flex-flow: row nowrap;
   gap: 4px;
   cursor: pointer;
@@ -30,4 +37,10 @@
 
 .tabContainer__number__important {
   background: #FF0200;
+}
+
+.underline {
+  width: 100%;
+  height: 2px;
+  background-color: #1D6BF3;
 }
