@@ -18,8 +18,7 @@ function WordsInput() {
   };
 
   return (
-    <div id="app">
-      <FormControl sx={{width: '100%'}}>
+      <FormControl sx={{width: '100%', marginBottom: '20px'}} >
         <TextField
           value={inputText}
           placeholder="Слова, через запятую"
@@ -39,7 +38,6 @@ function WordsInput() {
           }}
         />
       </FormControl>
-    </div>
   );
 };
 

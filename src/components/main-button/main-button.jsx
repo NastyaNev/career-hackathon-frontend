@@ -3,13 +3,15 @@ import { Button } from "@mui/material";
 import { styled } from '@mui/material/styles';
 import { NavLink } from 'react-router-dom';
 
-function MainButton ({ text, way }) {
+// Кнопка с голубым фоном - variant='contained'
+// Кнопка без фона - variant='outlined'
+
+function MainButton ({ text, variant }) {
 
     const ButtonForMain = styled(Button)({
         width: 140, 
         height: 40, 
         padding: 0, 
-        marginRight: "40px", 
         textTransform: 'none', 
         fontFamily: 'YS Text',
         fontSize: '14px', 
@@ -18,11 +20,9 @@ function MainButton ({ text, way }) {
       });
 
   return (
-    <NavLink to={way} >
-      <ButtonForMain variant="outlined" >
+      <ButtonForMain variant={variant} >
           {text}
       </ButtonForMain>
-    </NavLink>
   )
 }
 

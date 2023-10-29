@@ -9,4 +9,10 @@
 
 .card_link {
     text-decoration: none;
+    transition: opacity 0.5s ease-in-out;
+    color: #1d6bf3
+}
+
+.card_link:hover {
+    opacity: 0.6;
 }
