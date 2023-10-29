@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router";
 import Main from "../../pages/main/main";
 import Layout from "../layout/layout";
-// import Vacancies from "../../pages/vacancies/vacancies";
+import Vacancies from "../../pages/vacancies/vacancies";
 import Candidates from "../../pages/candidates/candidates";
 import NotFound from "../../pages/not-found/not-found";
 import styles from "./app.module.css";
