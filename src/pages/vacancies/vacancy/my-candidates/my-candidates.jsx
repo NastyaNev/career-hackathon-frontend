@@ -13,6 +13,7 @@ import stateDefault from '../../../../images/State=Default.svg';
 import statePressed from '../../../../images/State=Pressed.svg';
 import ggInfo from '../../../../images/gg_info.svg';
 import arrowDown from '../../../../images/arrow_down.svg';
+import DropDownTables from 'components/drop-down-menu/drop-down-tables';
 
 // Вакансия
 
@@ -130,7 +131,9 @@ function MyCandidates() {
                   <div style={textHeaderStyle}>{item.lastwork}</div>
                   <div style={{...textBodyStyle, color: '#797981', marginTop: '2px'}}>{item.lastvacancy}</div>
                 </TableCell>
-                <TableCell>{item.name}</TableCell>
+                <TableCell>
+                  <DropDownTables />
+                </TableCell>
                 <TableCell style={textBodyStyle}>
                   {item.date}
                 </TableCell>

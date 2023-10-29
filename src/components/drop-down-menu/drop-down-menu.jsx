@@ -1,22 +1,21 @@
 import * as React from 'react';
-import { Stack, Select, Typography, FormControl, MenuItem, ListItemIcon, Checkbox, ListItemText, Button } from '@mui/material';
-import ClickAwayListener from '@mui/material/ClickAwayListener';
+import { Stack, Select, Typography, FormControl, MenuItem, ListItemIcon, Checkbox, ListItemText } from '@mui/material';
 import arrowDown from '../../images/arrow_down_black.svg';
 import arrowUp from '../../images/arrow_up.svg';
 import styles from './drop-down-menu.module.css';
 
 function DropDownMenu({ nameFilter, options }) {
 
-//   const res = options.length === 0 ? false : true;
+  let bool = () => {
+    if(options.length === 0) {return false}
+    else {return true}
+  }
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(bool);
 
   const handleClick = () => {
-    setOpen((prev) => !prev);
-  };
-
-  const handleClickAway = (e) => {
-    e.preventDefault()
+    if(options.length === 0) {setOpen(false)}
+    else {setOpen((prev) => !prev)}
   };
 
   const MenuProps = {
@@ -26,13 +25,9 @@ function DropDownMenu({ nameFilter, options }) {
       }
     }}
 
-    
-
   return (
-    <ClickAwayListener onClickAway={handleClickAway}>
       <FormControl sx={{position: 'relative'}}>
         <Select
-            defaultOpen
             input={
                 <Stack flexDirection='row' justifyContent='space-between' alignItems='center' onClick={handleClick}>
                     <Typography ml={1.5} sx={{fontSize: '16px', fontWeight: 500, lineHeight: '20px'}}>{nameFilter}</Typography>
@@ -44,11 +39,12 @@ function DropDownMenu({ nameFilter, options }) {
             className={styles.select}
             variant="filled"
             MenuProps={MenuProps}
+            value={nameFilter}
         />
         {open ? (
           <Stack sx={{p: '12px 8px 0 8px', gap: '8px'}}>
             {options.map((option) => (
-            <MenuItem key={option} value={option} sx={{padding: 0}} className={styles.options} >
+            <MenuItem key={option} value={nameFilter} sx={{padding: 0}} className={styles.options} >
               <ListItemIcon sx={{height: '20px'}}>
                 <Checkbox />
               </ListItemIcon>
@@ -58,7 +54,6 @@ function DropDownMenu({ nameFilter, options }) {
           </Stack>
          ) : null}
       </FormControl>
-    </ClickAwayListener>
   );
 }
 

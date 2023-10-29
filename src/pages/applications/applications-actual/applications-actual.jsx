@@ -13,6 +13,7 @@ import ggInfo from '../../../images/gg_info.svg';
 import arrowDown from '../../../images/arrow_down.svg';
 import { NavLink } from 'react-router-dom';
 import stylesCard from '../../../components/direction-main-card/direction-main-card.module.css';
+import DropDownTables from 'components/drop-down-menu/drop-down-tables';
 // Отклики
 
 function ApplicationsActual() {
@@ -129,7 +130,9 @@ function ApplicationsActual() {
                   </TableCell>
                   <TableCell style={ textBodyStyle }>{item.experience}</TableCell>
                   <TableCell style={ textBodyStyle }>{item.place}</TableCell>
-                  <TableCell>{item.name}</TableCell>
+                  <TableCell >
+                    <DropDownTables />
+                  </TableCell>
                   <TableCell style={textBodyStyle}>
                     {item.date}
                   </TableCell>

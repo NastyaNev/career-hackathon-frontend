@@ -20,13 +20,15 @@ function Сandidates() {
           </NavLink>
         </Box>
 
-        <Grid container rowSpacing={2.5} columnSpacing={{ xs: 1, sm: 2, md: 2.75 }} mt={2.75} className={styles.grid_container}>
-          {itemsTime.map((item, i) => (
-            <Grid item>
-                <DirectionMainCardTime key={i} item={item} wayTime='/candidates/candidate' />
-            </Grid>
-          ))}
-        </Grid>
+        <Box>
+          <Grid container rowSpacing={2.5} columnSpacing={{ xs: 1, sm: 2, md: 2.5 }} mt={2.75} className={styles.grid_container}>
+            {itemsTime.map((item, i) => (
+              <Grid item>
+                  <DirectionMainCardTime key={i} item={item} wayTime='/candidates/candidate' />
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
       </Stack>
     </>
   )
