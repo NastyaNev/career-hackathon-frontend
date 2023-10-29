@@ -54,9 +54,9 @@ function Vacancy() {
             <li className={styles.condition}>
               {`Опыт от ${itemVacancy.experience} лет`}
             </li>
-            {itemVacancy.technologies.map(technology => {
+            {itemVacancy.technologies.map((technology, index) => {
               return (
-                <li className={styles.condition}>
+                <li key={index} className={styles.condition}>
                   {technology}
                 </li>
               )

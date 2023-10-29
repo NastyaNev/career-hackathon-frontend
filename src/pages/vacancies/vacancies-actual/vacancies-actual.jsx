@@ -8,8 +8,8 @@ function VacanciesActual() {
   return (
   <Grid container rowSpacing={2.5} columnSpacing={{ xs: 1, sm: 2, md: 2.75 }} ml={0} mt={0} className={styles.grid_container}>
       {itemsVacancies.map((item, i) => (
-        <Grid item>
-            <DirectionMainCardVacancy key={i} item={item} wayVacancies='/vacancies/vacancy' />
+        <Grid item key={i}>
+            <DirectionMainCardVacancy item={item} wayVacancies='/vacancies/vacancy' />
         </Grid>
       ))}
    </Grid>
