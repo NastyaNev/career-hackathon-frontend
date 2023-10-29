@@ -20,7 +20,7 @@ function DirectionMainCardVacancy(props) {
   const stackStyle = {
     padding: '24px',
     height: '182px',
-    display: 'flex', 
+    display: 'flex',
     lexDirection: 'column'
   };
 
@@ -61,7 +61,7 @@ function DirectionMainCardVacancy(props) {
     fontWeight: '500',
     fontSize: '11px'
   };
-  
+
   const textDownStyle = {
     color: '#797981',
     fontFamily: 'YS Text',
@@ -79,7 +79,6 @@ function DirectionMainCardVacancy(props) {
     backgroundColor: '#FF0200',
     borderRadius: '10px',
     padding: '2px 4px',
-    borderRadius: '10px',
     height: '14px'
   }
 
