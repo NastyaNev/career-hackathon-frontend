@@ -124,7 +124,7 @@ function ApplicationsActual() {
                   <TableCell style={ textBodyVacancyStyle }>
                     <NavLink to='/vacancies/vacancy' target="_blank" className={stylesCard.card_link}>
                         <Tooltip title={`Перейти на вакансию ${item.vacancy}`} >
-                          {item.vacancy} в {item.where}
+                          <span>{item.vacancy} в {item.where}</span>
                         </Tooltip>
                     </NavLink>
                   </TableCell>

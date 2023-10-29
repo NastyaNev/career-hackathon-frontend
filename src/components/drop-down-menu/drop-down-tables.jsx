@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Select, FormControl, MenuItem } from '@mui/material';
-import styles from './drop-down-menu.module.css';
 import { styled } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
@@ -40,15 +39,13 @@ const BootstrapInput = styled(InputBase)(() => ({
         <Select
             IconComponent={(props) => (
                 <KeyboardArrowDownRoundedIcon {...props}/>
-              )}
+            )}
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             value={choose}
             onChange={handleChange}
             input={<BootstrapInput />}
-            disableUnderline
             sx={{display: 'flex', backgroundColor: color, maxWidth: '199px', minWidth: '110px', width: 'calc(100vw - 1241px)', borderRadius: '4px', height: '40px', padding: '0'}}
-            className={styles.select}
             variant="filled"
         >
             <MenuItem value={'Новый'}>Новый</MenuItem>
