@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, ButtonGroup, Stack } from "@mui/material";
+import { ButtonGroup, Stack } from "@mui/material";
 import styles from './application.module.css';
 
 import PageSubMenu from "../../components/ui/page-sub-menu/PageSubMenu";
@@ -10,7 +10,6 @@ import table from '../../images/view-table.svg';
 import grid from '../../images/view-grid.svg';
 
 function Applications() {
-  console.log('class', styles['new-class-input'])
   return (
     <main>
       <h2 className={styles.heading}>Отклики</h2>
