@@ -34,7 +34,7 @@ function App() {
           </Route>
           <Route path="/candidates/candidate" element={<Candidat />} />
           <Route path="/applications" element={<Applications />} >
-            <Route path="/applications/actual" element={<ApplicationsActual />} />
+            <Route path="/applications" element={<ApplicationsActual />} />
             <Route path="/applications/new" element={<ApplicationsNew />} />
             <Route path="/applications/applications-archive" element={<ApplicationsArchive />} />
           </Route>

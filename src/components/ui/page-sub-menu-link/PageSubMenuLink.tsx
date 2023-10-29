@@ -17,7 +17,7 @@ const PageSubMenuLink = ({
 } : PageSubMenuLinkProps) => {
   const areNotificationsVisible = notifications > 0;
   return (
-    <NavLink to={to} className={styles.link}>
+    <NavLink to={to} className={styles.link} end>
       {({ isActive }) => (
         <div className={styles.tabContainer}>
           <div className={styles.tabContainer__item}>

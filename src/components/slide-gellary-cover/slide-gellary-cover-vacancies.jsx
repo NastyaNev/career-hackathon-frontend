@@ -1,7 +1,7 @@
 import React from 'react';
 import { Stack, Typography } from "@mui/material";
 import MainButton from '../../components/main-button/main-button';
-import ButtonPlus from 'components/button-plus/button-plus ';
+import ButtonPlus from '../../components/button-plus/button-plus';
 import plus from '../../images/plus.svg';
 
 

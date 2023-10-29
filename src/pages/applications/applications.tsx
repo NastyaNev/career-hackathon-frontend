@@ -11,7 +11,7 @@ import grid from '../../images/view-grid.svg';
 
 function Applications() {
   return (
-    <main>
+    <>
       <h2 className={styles.heading}>Отклики</h2>
       <Stack
         direction={'row'}
@@ -20,7 +20,7 @@ function Applications() {
         <PageSubMenu links={
           <>
             <PageSubMenuLink
-              to={'./actual'}
+              to={'.'}
               text={'Акутальные'}
               notifications={80}
             />
@@ -45,7 +45,7 @@ function Applications() {
             </ButtonGroup>
           </div>
       </Stack>
-    </main>
+    </>
   )
 }
 
