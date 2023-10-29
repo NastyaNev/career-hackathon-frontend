@@ -8,6 +8,7 @@ import SearchInput from '../../components/search-input/search-input';
 import ButtonPlus from '../../components/button-plus/button-plus';
 import table from '../../images/view-table.svg';
 import grid from '../../images/view-grid.svg';
+import { Outlet } from "react-router";
 
 function Applications() {
   return (
@@ -45,6 +46,7 @@ function Applications() {
             </ButtonGroup>
           </div>
       </Stack>
+      <Outlet />
     </>
   )
 }

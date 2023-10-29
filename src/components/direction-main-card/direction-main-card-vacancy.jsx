@@ -1,10 +1,9 @@
 // Карусель с вакансиями
-import { Paper, Stack, Typography } from "@mui/material";
+import { Paper, Stack, Typography, Tooltip } from "@mui/material";
 import React from "react";
 import styles from "./direction-main-card.module.css";
 import pin from "../../images/map-pin.svg";
 import suitcase from "../../images/briefcase.svg";
-import { Link } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 function DirectionMainCardVacancy(props) {
@@ -21,7 +20,7 @@ function DirectionMainCardVacancy(props) {
   const stackStyle = {
     padding: '24px',
     height: '182px',
-    display: 'flex', 
+    display: 'flex',
     lexDirection: 'column'
   };
 
@@ -62,7 +61,7 @@ function DirectionMainCardVacancy(props) {
     fontWeight: '500',
     fontSize: '11px'
   };
-  
+
   const textDownStyle = {
     color: '#797981',
     fontFamily: 'YS Text',
@@ -80,14 +79,13 @@ function DirectionMainCardVacancy(props) {
     backgroundColor: '#FF0200',
     borderRadius: '10px',
     padding: '2px 4px',
-    borderRadius: '10px',
     height: '14px'
   }
 
 
   return (
-    <NavLink className={styles.card_link} to={wayVacancies}>
-      <Link component="button" underline='none' sx={{'&:hover': {opacity: [0.9, 0.8, 0.7]}, display: 'flex', textAlign: 'start'}}>
+    <NavLink target="_blank" className={styles.card_link} to={wayVacancies}>
+      <Tooltip title={`Перейти на вакансию ${item.name}`} >
         <Paper elevation={3} square={false} sx={ cardStyle }>
           <Stack sx={ stackStyle }>
             <div style={divTopStyle}>
@@ -113,7 +111,7 @@ function DirectionMainCardVacancy(props) {
             </div>
           </Stack>
         </Paper>
-      </Link>
+      </ Tooltip>
     </NavLink>
   )
 }

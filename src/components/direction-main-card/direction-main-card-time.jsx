@@ -1,5 +1,5 @@
 // Карусель с просмотренными кандидатами
-import { Avatar, Paper, Stack, Typography } from "@mui/material";
+import { Avatar, Paper, Stack, Typography, Tooltip } from "@mui/material";
 import React from "react";
 import styles from "./direction-main-card.module.css";
 import pin from "../../images/map-pin.svg";
@@ -94,8 +94,8 @@ function DirectionMainCardTime(props) {
   }
 
   return (
-    <NavLink className={styles.card_link} to={wayTime}>
-      <Link component="button" underline='none' sx={{'&:hover': {opacity: [0.9, 0.8, 0.7]}, display: 'flex', textAlign: 'start'}}>
+    <NavLink target="_blank" className={styles.card_link} to={wayTime}>
+      <Tooltip title={`Перейти в анкету ${item.name}`} >
         <Paper elevation={3} square={false} sx={cardStyle}>
           <Stack sx={ stackStyle }>
             <div>
@@ -129,8 +129,8 @@ function DirectionMainCardTime(props) {
             </div>
           </Stack>
         </Paper>
-      </Link>
-    </NavLink>
+        </Tooltip>
+      </NavLink>
   );
 }
 

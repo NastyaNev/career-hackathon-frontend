@@ -3,6 +3,8 @@ import { Stack, Typography } from "@mui/material";
 import MainButton from '../../components/main-button/main-button';
 import ButtonPlus from '../../components/button-plus/button-plus';
 import plus from '../../images/plus.svg';
+import { NavLink } from 'react-router-dom';
+import stylesButton from './styles-button.module.css';
 
 
 function SlideGellaryCoverVacancies () {
@@ -15,7 +17,9 @@ function SlideGellaryCoverVacancies () {
             Мои вакансии</Typography>
             <ButtonPlus image={plus} text="Добавить" />
         </Stack>
-        <MainButton text="Мои вакансии" way="/vacancies"/>
+        <NavLink to="/vacancies" target="_blank" className={stylesButton.button} >
+          <MainButton text="Мои вакансии" variant="outlined"  />
+        </NavLink>
     </Stack>
   )
 }

@@ -1,7 +1,6 @@
 import { Stack } from "@mui/system";
 import styles from "./slide-gallery.module.css";
 import React, { useRef, useState } from "react";
-import DirectionMainCard from "../direction-main-card/direction-main-card";
 import Carousel, { consts } from "react-elastic-carousel";
 import SlideGalleryArrow from "./slide-gallery-arrow/slide-gallery-arrow";
 import RenderComponent from "./render-component/render-component";

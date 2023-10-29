@@ -15,7 +15,7 @@ export const itemsVacancies: Array<IItemsVacancies> = [
   {
     total: '80',
     new: '12',
-    company: "Сбербанк",
+    company: "Сбер",
     name: "UI/UX дизайнер / веб дизайнер",
     city: 'Москва',
     format: 'Офис',

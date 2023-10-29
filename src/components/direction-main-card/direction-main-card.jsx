@@ -78,8 +78,8 @@ function DirectionMainCard(props) {
             <Typography variant="body2" style={ textGreenrStyle }>{"+" + item.new}</Typography>
           </div>
           <Typography variant="h6" style={ textHeaderStyle }>{item.name}</Typography>
-          {item.skills.map((i) => (
-            <Typography variant="body2" style={ textDownStyle }>{i}</Typography>))
+          {item.skills.map((i, index) => (
+            <Typography variant="body2" style={ textDownStyle } key={index}>{i}</Typography>))
           }
         </Stack>
         <img style={ imageStyle } src={item.image} alt="Изображение" />
