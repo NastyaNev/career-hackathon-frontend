@@ -8,7 +8,7 @@ import NotFound from "../../pages/not-found/not-found";
 import styles from "./app.module.css";
 import Applications from "../../pages/applications/applications";
 import Vacancy from "../../pages/vacancies/vacancy/vacancy";
-import Candidat from "../../pages/candidates/candidat";
+import Candidate from "../../pages/candidates/candidate/candidate";
 import ApplicationsNew from "../../pages/applications/applications-new/applicationa-new";
 import ApplicationsArchive from "../../pages/applications/applications-archive/applications-archive";
 import VacancyApplications from "../../pages/vacancies/vacancy/vacancy-applications/vacancy-applications";
@@ -28,11 +28,11 @@ function App() {
             <Route path="/vacancies" element={<VacanciesActual />} />
             <Route path="/vacancies/vacancies-archive" element={<VacanciesArchive />} />
           </Route>
-          <Route path="/vacancies/vacancy" element={<Vacancy />} >
-            <Route path="/vacancies/vacancy" element={<MyCandidates />} />
-            <Route path="/vacancies/vacancy/vacancy-applications" element={<VacancyApplications />} />
+          <Route path="/vacancies/vacancy/:id" element={<Vacancy />} >
+            <Route path="/vacancies/vacancy/:id" element={<MyCandidates />} />
+            <Route path="/vacancies/vacancy/:id/vacancy-applications" element={<VacancyApplications />} />
           </Route>
-          <Route path="/candidates/candidate" element={<Candidat />} />
+          <Route path="/candidates/candidate/:id" element={<Candidate />} />
           <Route path="/applications" element={<Applications />} >
             <Route path="/applications" element={<ApplicationsActual />} />
             <Route path="/applications/new" element={<ApplicationsNew />} />

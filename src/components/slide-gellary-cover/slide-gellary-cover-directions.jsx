@@ -12,7 +12,7 @@ function SlideGellaryCoverDirections () {
             Поиск кандидата по направлению</Typography>
         
         <NavLink to="/candidates" target="_blank" className={stylesButton.button}>
-            <MainButton text="Все кандидаты" variant="outlined"  />
+            <MainButton text="Все кандидаты" variant="outlined" width='140px' />
         </NavLink>
     </Stack>
   )

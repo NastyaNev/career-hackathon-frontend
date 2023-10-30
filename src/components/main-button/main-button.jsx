@@ -6,10 +6,10 @@ import { NavLink } from 'react-router-dom';
 // Кнопка с голубым фоном - variant='contained'
 // Кнопка без фона - variant='outlined'
 
-function MainButton ({ text, variant }) {
+function MainButton ({ text, variant, width }) {
 
     const ButtonForMain = styled(Button)({
-        width: 140, 
+        width: width, 
         height: 40, 
         padding: 0, 
         textTransform: 'none', 

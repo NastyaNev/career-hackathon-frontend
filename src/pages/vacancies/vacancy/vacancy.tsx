@@ -1,7 +1,8 @@
-import React from 'react';
-import {NavLink} from 'react-router-dom';
-import {Paper, Stack} from "@mui/material";
+import React, {useEffect} from 'react';
+import {NavLink, useParams} from 'react-router-dom';
+import {Link, Paper, Stack, Tooltip} from "@mui/material";
 import { Outlet } from 'react-router-dom';
+
 
 import {itemsVacancies} from "../../../utils/arrays/items-vacancies";
 
@@ -21,9 +22,11 @@ interface IVacancyProps {
   technologies: Array<string>
 }
 
-const itemVacancy = itemsVacancies[0];
-
 function Vacancy() {
+  const { id } = useParams();
+
+  const itemVacancy = itemsVacancies.find(item => item.id === id);
+  
   return (
     <>
       <NavLink to="/vacancies" className={styles.link}>
@@ -35,43 +38,51 @@ function Vacancy() {
           <span className={styles.description}>
             <span className={styles.container}>
               <span className={styles.heading}>
-                <h2 className={styles.vacancy}>{itemVacancy.name}</h2>
-                <p className={styles.company}>{itemVacancy.company}</p>
+                <h2 className={styles.vacancy}>{itemVacancy!.name}</h2>
+                <p className={styles.company}>{itemVacancy!.company}</p>
               </span>
               <span className={styles.buttons}>
+                <Tooltip title='Редактировать вакансию'>
                   <img className={styles.button} src={edit} alt="Редактировать"/>
+                </Tooltip>
+                <Tooltip title='Удалить вакансию'>
                   <img className={styles.button} src={trash} alt="Удалить"/>
+                </Tooltip>
               </span>
             </span>
           </span>
           <ul className={styles.conditions}>
             <li className={styles.condition}>
-              {itemVacancy.city}
+              {itemVacancy!.city}
             </li>
             <li className={styles.condition}>
-              {itemVacancy.format}
+              {itemVacancy!.format}
             </li>
             <li className={styles.condition}>
-              {`Опыт от ${itemVacancy.experience} лет`}
+              {`Опыт от ${itemVacancy!.experience} лет`}
             </li>
-            {itemVacancy.technologies.map(technology => {
+            {itemVacancy!.technologies.map((technology, index) => {
               return (
-                <li className={styles.condition}>
+                <li key={index} className={styles.condition}>
                   {technology}
                 </li>
               )
             })}
             <li className={styles.condition}>
-              {itemVacancy.salary}
+              {itemVacancy!.salary}
             </li>
           </ul>
         </Stack>
         <Stack>
-          <button className={styles.find}>Найти кандидата</button>
-          <div style={{display: "flex", justifyContent: "flex-end"}}>
-            <p className={styles.open}>Описание вакансии</p>
-            <img src={arrowDown} alt="Вниз"/>
-          </div>
+          <Tooltip title='Отсортировать подходящих кандидатов'>
+            <button className={styles.find}>Найти кандидата</button>
+          </Tooltip>
+          <Tooltip title='Развернуть описание вакансии'>
+            <Link style={{display: "flex", justifyContent: "flex-end"}} className={styles.description_link} component="button" underline='none'>
+              <p className={styles.open}>Описание вакансии</p>
+              <img src={arrowDown} alt="Вниз"/>
+            </Link>
+          </Tooltip>
         </Stack>
       </Paper>
       <Stack mb={3} mt={3} direction='row' spacing={2} >

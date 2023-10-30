@@ -20,7 +20,7 @@ function DirectionMainCardVacancy(props) {
   const stackStyle = {
     padding: '24px',
     height: '182px',
-    display: 'flex', 
+    display: 'flex',
     lexDirection: 'column'
   };
 
@@ -61,7 +61,7 @@ function DirectionMainCardVacancy(props) {
     fontWeight: '500',
     fontSize: '11px'
   };
-  
+
   const textDownStyle = {
     color: '#797981',
     fontFamily: 'YS Text',
@@ -78,9 +78,12 @@ function DirectionMainCardVacancy(props) {
     lineHeight: '14px',
     backgroundColor: '#FF0200',
     borderRadius: '10px',
-    padding: '2px 4px',
-    borderRadius: '10px',
+    padding: '2px 4px 1px 4px',
     height: '14px'
+  }
+
+  const textNoneStyle = {
+    display: 'none'
   }
 
 
@@ -91,8 +94,8 @@ function DirectionMainCardVacancy(props) {
           <Stack sx={ stackStyle }>
             <div style={divTopStyle}>
               <Typography variant="body2" style={{ ...textTopStyle, marginRight: '12px' }}>Всего откликов:</Typography>
-              <Typography variant="body2" style={{ ...textTopStyle, marginRight: '2px' }}>80</Typography>
-              <Typography variant="body2" style={ textRedStyle }>+12</Typography>
+              <Typography variant="body2" style={{ ...textTopStyle, marginRight: '2px' }}>{item.total}</Typography>
+              <Typography variant="body2" style={ item.new === '0' ? textNoneStyle : textRedStyle}>+{item.new}</Typography>
             </div>
             <div>
               <Typography variant="body2" style={ textTopStyle }>{item.company}</Typography>

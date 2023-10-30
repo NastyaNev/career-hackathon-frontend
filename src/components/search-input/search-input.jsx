@@ -4,7 +4,7 @@ import close from '../../images/close.svg';
 import glass from '../../images/search.svg';
 import styles from './search-input.module.css'
 
-function SearchInput() {
+function SearchInput({className}) {
 
   const [showClearIcon, setShowClearIcon] = useState("none");
   const [inputText, setInputText] = useState('')
@@ -19,7 +19,7 @@ function SearchInput() {
   };
 
   return (
-    <div id="app">
+    <div id="app" className={className}>
       <FormControl sx={{width: '100%'}}>
         <TextField
           value={inputText}
@@ -41,7 +41,7 @@ function SearchInput() {
               >
                 <img className={styles.image} src={close} alt='Закрыть' />
               </InputAdornment>
-            ) : null 
+            ) : null
           }}
         />
       </FormControl>

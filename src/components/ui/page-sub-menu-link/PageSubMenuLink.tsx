@@ -17,25 +17,28 @@ const PageSubMenuLink = ({
 } : PageSubMenuLinkProps) => {
   const areNotificationsVisible = notifications > 0;
   return (
-    <NavLink to={to} className={styles.link}>
+    <NavLink to={to} className={styles.link} end>
       {({ isActive }) => (
-        <div className={styles.tabContainer__item}>
-          <p
-            className={styles.tabContainer__text}
+        <div className={styles.tabContainer}>
+          <div className={styles.tabContainer__item}>
+            <p
+              className={styles.tabContainer__text}
 
-          >
-            {text}
-          </p>
-          {areNotificationsVisible && (
-            <span
-              className={classNames(
-                styles.tabContainer__number,
-                isImportant ? styles.tabContainer__number__important : undefined
-              )}
             >
+              {text}
+            </p>
+            {areNotificationsVisible && (
+              <span
+                className={classNames(
+                  styles.tabContainer__number,
+                  isImportant ? styles.tabContainer__number__important : undefined
+                )}
+              >
               {notifications}
             </span>
-          )}
+            )}
+          </div>
+          {isActive ? <span className={styles.underline}></span> : undefined}
         </div>
       )}
     </NavLink>
