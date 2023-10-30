@@ -52,7 +52,11 @@ function DirectionMainCardTime(props) {
     fontFamily: 'YS Display',
     fontWeight: '500',
     fontSize: '20px',
-    lineHeight: '24px'
+    lineHeight: '24px',
+    overflow: 'hidden',
+    whiteSpace: 'nowrap',
+    textOverflow: 'ellipsis',
+    maxWidth: '190px',
   };
 
   const textTopGreenStyle = {
