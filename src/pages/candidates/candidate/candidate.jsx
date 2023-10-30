@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, useParams} from 'react-router-dom';
 import blackArrow from '../../../images/blackarrow.svg';
 import stylesBack from '../../vacancies/vacancy/styles.module.css';
 import {Paper, Stack, Typography, IconButton, Tooltip, List, ListSubheader, ListItemButton, ListItemIcon, ListItemText, Box} from "@mui/material";
@@ -7,7 +7,6 @@ import PraktikumLogo from '../../../images/PraktikumLogo.svg'
 import Like from '../../../images/Like.svg';
 import download from '../../../images/forCandidat/download.svg';
 import share from '../../../images/forCandidat/share.svg';
-import avatar from '../../../images/avatar.jpg';
 import geotag from '../../../images/forCandidat/geotag.svg';
 import caseIcon from '../../../images/forCandidat/caseIcon.svg';
 import award from '../../../images/forCandidat/award.svg';
@@ -22,10 +21,34 @@ import tg from '../../../images/forCandidat/telegram.svg';
 import CardForVacancy from '../../../components/direction-main-card/card-for-vacancy';
 import list from '../../../images/forCandidat/clipboard-list.svg';
 import MainButton from '../../../components/main-button/main-button';
+import { itemsTime } from '../../../utils/arrays/items-candidates';
 
 // Кандидат
 
 function Candidate() {
+  const { id } = useParams();
+
+  const itemCandidat = itemsTime.find(item => item.id === id);
+
+  const years = () => {if (itemCandidat.experience === 1) {return 'год'}
+    else if (itemCandidat.experience > 1 && itemCandidat.experience < 5) {
+      return "года"
+    } else {
+      return 'лет'
+    }
+  }
+
+  const yearsOld = () => {
+    if (itemCandidat.age >= 25 && itemCandidat.age <= 29) {return 'лет'}
+    else if (itemCandidat.age === 20 || itemCandidat.age === 30 || itemCandidat.age === 40) {
+      return 'лет'
+    } else if (itemCandidat.age === 21 || itemCandidat.age === 31 || itemCandidat.age === 41){
+      return 'год'
+    } else {
+      return 'года'
+    }
+  }
+
   return (
     <>
       <NavLink to="/candidates" className={stylesBack.link}>
@@ -42,10 +65,10 @@ function Candidate() {
             <div className={styles.candidateAdditionalInfo}>
               <div className={styles.candidateInfo}>
                 <div className={styles.avatarBlock}>
-                  <img className={styles.avatar} src={avatar} alt="Аватар"/>
+                  <img className={styles.avatar} src={itemCandidat.avatar} alt="Аватар"/>
                   <div className={styles.nameBlock}>
-                    <p className={styles.name}>Анна Иванова</p>
-                    <p className={styles.extraInfo}>Веб дизайнер • 25 лет</p>
+                    <p className={styles.name}>{itemCandidat.name}</p>
+                    <p className={styles.extraInfo}>{itemCandidat.profession} • {itemCandidat.age} {yearsOld()}</p>
                   </div>
                 </div>
               </div>
@@ -70,27 +93,24 @@ function Candidate() {
             <div className={styles.locationBlock}>
               <p className={styles.subInformation}>
                 <img src={geotag} alt="Геотэг"/>
-                Петропавловск-Камчатский
+                {itemCandidat.city}
               </p>
               <p className={styles.subInformation}>
                 <img src={caseIcon} alt="Геотэг"/>
-                Веб дизайнер в Яндекс Cloud
+                {itemCandidat.prev}
               </p>
-              <div className={styles.experienceBlob}>5 лет</div>
+              <div className={styles.experienceBlob}>{itemCandidat.experience} {years()}</div>
             </div>
             <ul className={styles.conditions}>
               <li className={styles.condition}>
                 <img src={PraktikumLogo} alt="Практикум"/>
-                Дизайнер интерфейсов
+                {itemCandidat.course}
               </li>
               <li className={styles.condition}>
-                Офис
+                {itemCandidat.business}
               </li>
               <li className={styles.condition}>
-                Полная занятость
-              </li>
-              <li className={styles.condition}>
-                Высшее образование
+                {itemCandidat.education}
               </li>
             </ul>
           </Paper>
@@ -102,11 +122,9 @@ function Candidate() {
                 — Ветеран Хахатонов Практикума!</p>
             </div>
             <ul className={styles.skills}>
-              <li className={styles.skill}>Figma</li>
-              <li className={styles.skill}>Web</li>
-              <li className={styles.skill}>Material Design</li>
-              <li className={styles.skill}>HIG</li>
-              <li className={styles.skill}>Design Thinking</li>
+              {itemCandidat.stack.map((item, i) => (
+                  <li key={i} className={styles.skill}>{item}</li>
+              ))}
             </ul>
             <div className={styles.schema}>
               <img src={schema} alt="Схема навыков"/>
@@ -126,7 +144,7 @@ function Candidate() {
           <Paper elevation={3} className={styles.main}>
             <p className={styles.paperHeading}>О себе</p>
             <p className={styles.about}>
-              Люблю гулять под дождём, щенков, фильмы первой половины двадцатого века и проектировать сложные веб-сервисы без четкого ТЗ
+              {itemCandidat.about}
             </p>
           </Paper>
           <Stack display={"flex"} flexDirection={"row"} className={styles.twoPapersContainer}>
@@ -173,7 +191,7 @@ function Candidate() {
                     <ListItemIcon sx={{minWidth: 0}}>
                       <img src={mail} alt="media" />
                     </ListItemIcon>
-                    <ListItemText primary={<Typography sx={{fontFamily: 'YS Text', fontSize: '11px', fontStyle: 'normal', fontWeight: 500, lineHeight: '12px', color: '#797981'}}>annawebdesign@ya.ru</Typography>} />
+                    <ListItemText primary={<Typography sx={{fontFamily: 'YS Text', fontSize: '11px', fontStyle: 'normal', fontWeight: 500, lineHeight: '12px', color: '#797981'}}>{itemCandidat.connection.email}</Typography>} />
                   </ListItemButton>
                 </Tooltip>
                 <Tooltip title="Преейти в Telegram" >
@@ -181,7 +199,7 @@ function Candidate() {
                     <ListItemIcon sx={{minWidth: 0}}>
                       <img src={tg} alt="media" />
                     </ListItemIcon>
-                    <ListItemText primary={<Typography sx={{fontFamily: 'YS Text', fontSize: '11px', fontStyle: 'normal', fontWeight: 500, lineHeight: '12px', color: '#797981'}}>@annawebdesign</Typography>} />
+                    <ListItemText primary={<Typography sx={{fontFamily: 'YS Text', fontSize: '11px', fontStyle: 'normal', fontWeight: 500, lineHeight: '12px', color: '#797981'}}>{itemCandidat.connection.tg}</Typography>} />
                   </ListItemButton>
                 </Tooltip>
               </List>
@@ -190,13 +208,13 @@ function Candidate() {
           <Paper elevation={3} className={styles.main}>
             <p className={styles.paperHeading}>Опыт работы</p>
             <Stack flexDirection='row' gap={1.5} mt={2} >
-              <Typography sx={{fontSize: '18px', fontStyle: 'normal', fontWeight: 400, lineHeight: '24px', color: '#797981', width: '163px'}}>Веб дизайнер в Яндекс Cloud</Typography>
+              <Typography sx={{fontSize: '18px', fontStyle: 'normal', fontWeight: 400, lineHeight: '24px', color: '#797981', width: '163px'}}>{itemCandidat.prev}</Typography>
               <Stack spacing={1.5} justifyContent='space-between' sx={{width: '552px'}}>
-                <Typography  className={styles.about}>В процессе работы над различными проектами, я стала осознавать важность глубокого понимания пользователей и их потребностей. Я проводила исследования, собирал обратную связь и наблюдала за пользователями в действии, чтобы узнать, как они взаимодействуют с интерфейсом и как его улучшить.Я также активно сотрудничала с разработчиками и другими участниками команды, чтобы создать сбалансированный и интегрированный дизайн. Мы обменивались идеями, проводили итерации и тестировали прототипы, чтобы достичь наилучших результатов.</Typography>
+                <Typography  className={styles.about}>{itemCandidat.functions}</Typography>
                 
                 <Stack spacing={0.5}>
                   <Typography className={styles.about} sx={{color: '#1A1B22', fontWeight: 900}}>Достижения:</Typography>
-                  <Typography className={styles.about}>Мой опыт работы дизайнером интерфейсов был увлекательным и насыщенным. Я постоянно учусь и развиваюсь, стремясь создавать интерфейсы, которые удовлетворяют потребности пользователей и создают положительный пользовательский опыт.</Typography>
+                  <Typography className={styles.about}>{itemCandidat.riches}</Typography>
                 </Stack>
              </Stack>
             </Stack>

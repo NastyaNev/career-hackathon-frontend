@@ -9,7 +9,7 @@ function VacanciesActual() {
   <Grid container rowSpacing={2.5} columnSpacing={{ xs: 1, sm: 2, md: 2.75 }} ml={0} mt={0} className={styles.grid_container}>
       {itemsVacancies.map((item, i) => (
         <Grid item key={i}>
-            <DirectionMainCardVacancy item={item} wayVacancies='/vacancies/vacancy' />
+            <DirectionMainCardVacancy item={item} wayVacancies={`/vacancies/vacancy/${item.id}`} />
         </Grid>
       ))}
    </Grid>

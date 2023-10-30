@@ -11,9 +11,9 @@ import SlideGellaryCoverCandidates from '../../components/slide-gellary-cover/sl
 import DirectionMainCard from '../../components/direction-main-card/direction-main-card';
 import DirectionMainCardVacancy from '../../components/direction-main-card/direction-main-card-vacancy';
 import DirectionMainCardTime from '../../components/direction-main-card/direction-main-card-time';
-import { itemsCandidates } from '../../utils/arrays/items-candidates';
+import { itemsCandidates } from '../../utils/arrays/items-candidates_by_direction';
 import { itemsVacancies } from '../../utils/arrays/items-vacancies';
-import { itemsTime } from '../../utils/arrays/items-time';
+import { itemsTime } from '../../utils/arrays/items-candidates';
 
 function Main() {
   

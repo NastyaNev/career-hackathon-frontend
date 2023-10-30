@@ -1,101 +1,127 @@
-import prog from '../../images/jobs/Img_programming.jpg';
-import analiz from '../../images/jobs/Img_analytics.jpg';
-import design from '../../images/jobs/Img_design.jpg';
-import manage from '../../images/jobs/image_47.jpg';
+import Jana from '../../images/protos/Jana.jpg';
+import Nastya from '../../images/protos/Nastya.jpg';
+import Andrey from '../../images/protos/Andrey.jpg';
+import Alisa from '../../images/protos/Alisa.jpg';
+import Natasha from '../../images/protos/Natasha.jpg';
+import Nadya from '../../images/protos/Nadya.jpg';
+import Kirill from '../../images/protos/Kirill.jpg';
 
-export const itemsCandidates = [
-    {
-      name: "Программирование",
-      total: '80',
-      new:  '12',
-      skills: [
-        'Тестировщик',
-        'Бэкенд',
-        'Фронденд',
-        'DevOps'
-      ],
-      image: prog
+export const itemsTime = [
+    {   id: 'liaoibls',
+        avatar: Jana,
+        name: "Яна Богачева",
+        age: 27,
+        connection: {tg: '@miss_yanberry', email: 'email@email.ru'},
+        course: "Менеджер проектов",
+        city: "Москва",
+        stack: ['Miro', 'Trello', 'Agile'],
+        prev: "Правое полушарие интроверта",
+        experience: 1,
+        functions: "Выстраивать процессы в команде. Создавать порядок из хаоса. Не вестись на убеждения коллег перенести дедлайн. Описывать задачи быстрее женщины из МФЦ.",
+        riches: "Договариваться с разработчиками, как Доктор Стрэндж с Дормамму.",
+        business: "Частичная занятость",
+        education: "Высшее",
+        about: "Люблю песиков и котиков, не люблю снег и холод.",
+        profession: "Проджект менеджер",
     },
     {
-        name: "Анализ данных",
-        total: '70',
-        new:  '0',
-        skills: [
-          'Системный аналитик',
-          'Финансовый аналитик',
-          'Бизнес аналитик',
-          '1С аналитик'
-        ],
-        image: analiz
+        id: 'gg7ygw5e',        
+        avatar: Nastya,
+        name: "Настя Неведрова",
+        age: 34,
+        connection: {tg: '@rozovane', email: 'asrozova@gmail.com'},
+        course: "Фронтент-разработчик (буткемп)",
+        city: "Санкт-Петербург",
+        stack: ['HTML/CSS', 'JavaSrtipt/TypeScript', 'React/Redux'],
+        prev: "Яндекс.Практикум (обучение)",
+        experience: 2,
+        functions: "Разработка интерфейсов",
+        riches: "Участие в Хакатоне",
+        business: "Удаленный сотрудник",
+        education: "Высшее",
+        about: "В свободное время катаюсь на сноуборде и sup-серфе. Занимаюсь творчеством, путешествую и хожу в походы.",
+        profession: "Фронтенд-разработчик",
     },
     {
-        name: "Дизайн",
-        total: '1000',
-        new:  '200',
-        skills: [
-          'Продуктовый дизайнер',
-          'Графический дизайнер',
-          'UX/UI дизайнер',
-          'Иллюстратор'
-        ],
-        image: design
+        id: '2e47pgfa',        
+        avatar: Andrey,
+        name: "Андрей Сидоров",
+        age: 34,
+        connection: {tg: '@Iam_ASi', email: 'mail@mail.com'},
+        course: "Дизайнер интерфесов",
+        city: "Новосибирск",
+        stack: ['Figma', 'UX-research', 'UI', 'JTBD', 'Design Thinking'],
+        prev: "Вольный копейщик",
+        experience: 5,
+        functions: "Проектирую дизайн веб-сервиса по поиску менторов в IT в роли продуктового дизайнера. Работаю в режиме стартапа в тесной связке с ПМ и разработчиками. UX-аудит приложений и сайтов, рекомендации по улучшению пользовательского опыта; Провожу конкурентный анализ; Провожу качественные исследования. Провел 50+ глубинных интервью; Проектирую UI-кит, флоу, CJM.",
+        riches: "Провожу челленджи и ивенты для дизайнеров.",
+        business: "Частичная занятость",
+        education: "Высшее",
+        about: "Люблю задавать вопросы. Долго думаю, потом быстро делаю. Включаю камеру на зум-созвонах. Люблю ходить пешком.",
+        profession: "Веб-дизайнер"
     },
     {
-        name: "Менеджмент",
-        total: '50',
-        new:  '1',
-        skills: [
-          'Менеджмент проектов',
-          'It рекрутер',
-          'Продакт менеджер'
-        ],
-        image: manage
+        id: 'nl1gx1y6',        
+        avatar: Alisa,
+        name: "Алиса Журавлева",
+        age: 34,
+        connection: {tg: '@alisa_zhuravleva1', email: 'mail@mail.com'},
+        course: "Дизайнер интерфесов",
+        city: "Москва",
+        stack: ['Figma', 'Figjam', 'Xmind', 'Miro', 'Notion'],
+        prev: "Яндекс.Практикум (обучение)",
+        experience: 1,
+        functions: "проектирование интерфейсов, прототипирование, проведение качественных и количественных исследований, презентация решений, продуктовый подход",
+        riches: "- провела аудит приложения Zoom, выявила его недостатки и точки роста, предложила варианты улучшения, спроектировала с нуля приложение для онлайн-школы под Android, используя гайдлайны MD; спроектировала сайт вебинара о стиле флэт в вебе; поработала в команде над улучшением страницы платежей для юр.лиц в онлайн-банке, используя дизайн-систему спроектировала новый раздел в приложении для студентов под iOS, используя гайдлайны HIG",
+        business: "Полная занятость",
+        education: "Высшее",
+        about: "Проектирую интерфейсы с учётом целей бизнеса и нужд потребителя. Мечтаю работать в продуктовой компании и ежедневно улучшать процессы взаимодействия пользователей с продуктом. Благодаря опыту работы в деловом туризме с клиентами из разных сфер бизнеса, легко нахожу общий язык с пользователями независимо от их опыта и бэкграунда, умею работать в команде и достигать поставленных целей. В продуктовом дизайне меня привлекает возможность работать над сервисами, которые незаметно меняют жизнь людей в лучшую сторону, использовать для этого современные технологии, а также участвовать в создании продуктов будущего. Для прокачки навыков слежу за соц.сетями крупных продуктовых компаний (Яндекс, Озон, Авито, МТС, Альфа-банк и другие) и за блогами дизайнеров. Стараюсь не пропускать дизайн-мероприятия, проходящие онлайн или офлайн, например, в сентябре ходила на Design Prosmotr, а еще недавно участвовала в конкурсе по проектированию интерфейса от Альфа-банка и школы BBE. В свободное время люблю кататься на велосипеде, а ещё ходить на квесты с друзьями — наша команда прошла уже больше 30 разных квестов.",
+        profession: "Продуктовый дизайнер"
     },
     {
-        name: "Программирование",
-        total: '80',
-        new:  '12',
-        skills: [
-          'Тестировщик',
-          'Бэкенд',
-          'Фронденд',
-          'DevOps'
-        ],
-        image: prog
-      },
-      {
-          name: "Анализ данных",
-          total: '70',
-          new:  '0',
-          skills: [
-            'Системный аналитик',
-            'Финансовый аналитик',
-            'Бизнес аналитик',
-            '1С аналитик'
-          ],
-          image: analiz
-      },
-      {
-          name: "Дизайн",
-          total: '1000',
-          new:  '200',
-          skills: [
-            'Продуктовый дизайнер',
-            'Графический дизайнер',
-            'UX/UI дизайнер',
-            'Иллюстратор'
-          ],
-          image: design
-      },
-      {
-          name: "Менеджмент",
-          total: '50',
-          new:  '1',
-          skills: [
-            'Менеджмент проектов',
-            'It рекрутер',
-            'Продакт менеджер'
-          ],
-          image: manage
-      }
-];
+        id: '9jyz5c9t',        
+        avatar: Kirill,
+        name: "Кирилл Камратов",
+        age: 25,
+        connection: {tg: '@kirillkamratov', email: 'Kirill.kamratov@yandex.ru'},
+        course: "Веб-разработчик Плюс",
+        city: "Москва",
+        stack: ['React', 'Redux', 'Typescript', 'ООП'],
+        prev: "Яндекс Практикум (обучение) ",
+        experience: 1,
+        functions: "Разработка интерфейсов",
+        riches: "Участие в хакатонах Яндекс. Практикума",
+        business: "Полная занятость",
+        education: "Высшее",
+        about: "Люблю гулять",
+        profession: "Фронтенд-разработчик"
+    },
+    {
+        id: '4hv84xjp',        
+        avatar: Natasha,
+        name: "Наталья Клычкова",
+        age: 35,
+        connection: {tg: '@tousette', email: 'mail@mail.ru'},
+        course: "Дизайнер интерфейсов",
+        city: "Москва",
+        stack: ['Figma', 'исследования', 'JTBD', 'Tilda'],
+        prev: "Фриланс",
+        experience: 1,
+        functions: "Проектирую интерфейсы, провожу глубинные интервью и количественные опросы, прототипирую, адаптирую дизайн под разные устройства",
+        riches: "Спроектировала MVP карьерного трекера вместе с командой",
+        business: "Частичная занятость",
+        education: "Высшее",
+        about: "Люблю структурировать информацию, играть в теннис и путешествовать",
+        profession: "Продуктовый дизайнер"
+    },
+//     { name: 'Олег Пономарев-Фигушкин', age: '43', profession: 'Бизнес аналитик', date: '17.10.2023', experience: 1 , city: 'Москва', where: 'Сбербанк', like: true, state: false, avarar: 'https://kartinkin.net/uploads/posts/2021-07/1625785184_32-kartinkin-com-p-programmist-art-art-krasivo-34.jpg', lastwork: 'Озон', lastvacancy: 'Коммуникационный директор' },
+//   { name: 'Зоя Листикова', age: '25', profession: 'Графический редактор', date: '16.10.2023', experience: 1 , city: 'Саратов', where: 'ВТБ', like: false, state: false, avarar: 'https://kartinkin.net/uploads/posts/2021-07/1625785184_32-kartinkin-com-p-programmist-art-art-krasivo-34.jpg', lastwork: 'Озон', lastvacancy: 'Коммуникационный директор' },
+//   { name: 'Андрей Герасимов', age: '95', profession: 'Бэкенд', date: '21.10.2023', experience: 5, city: 'Саратов', where: 'Сбербанк', like: true, state: true, avarar: 'https://kartinkin.net/uploads/posts/2021-07/1625785184_32-kartinkin-com-p-programmist-art-art-krasivo-34.jpg', lastwork: 'Озон', lastvacancy: 'Коммуникационный директор' },
+//   { name: 'Михаил Потапов', age: '18', profession: 'Фронтенд', date: '11.10.2023', experience: 1, city: 'Москва', where: 'ВТБ', like: false, state: true, avarar: 'https://kartinkin.net/uploads/posts/2021-07/1625785184_32-kartinkin-com-p-programmist-art-art-krasivo-34.jpg', lastwork: 'Озон', lastvacancy: 'Коммуникационный директор' },
+//   { name: 'Ольга Сидорина', age: '55', profession: 'Тестировщик', date: '10.10.2023', experience: 1, city: 'Саратов', where: 'ВТБ', like: false, state: false, avarar: 'https://kartinkin.net/uploads/posts/2021-07/1625785184_32-kartinkin-com-p-programmist-art-art-krasivo-34.jpg', lastwork: 'Озон', lastvacancy: 'Коммуникационный директор' },
+//   { name: 'Тимофей Ладушкин', age: '33', profession: 'Продуктовый дизайнер', date: '10.10.2023', experience: 4, city: 'Москва', like: true, state: true, avarar: 'https://kartinkin.net/uploads/posts/2021-07/1625785184_32-kartinkin-com-p-programmist-art-art-krasivo-34.jpg', lastwork: 'Озон', lastvacancy: 'Коммуникационный директор' },
+//   { name: 'Мария Хакимова', age: '19', profession: 'Менеджмент проектов', date: '10.10.2023', experience: 1, city: 'Саратов', where: 'Сбербанк', like: false, state: false, avarar: 'https://kartinkin.net/uploads/posts/2021-07/1625785184_32-kartinkin-com-p-programmist-art-art-krasivo-34.jpg', lastwork: 'Озон', lastvacancy: 'Коммуникационный директор' },
+//   { name: 'Дмитрий Бабушкин', age: '49', profession: 'Иллюстратор', date: '26.10.2023', experience: 1, city: 'Москва', where: 'ВТБ', like: true, state: true, avarar: 'https://kartinkin.net/uploads/posts/2021-07/1625785184_32-kartinkin-com-p-programmist-art-art-krasivo-34.jpg', lastwork: 'Озон', lastvacancy: 'Коммуникационный директор' },
+//   { name: 'Федор Бородинский', age: '37', profession: 'Финансовый аналитик', date: '10.10.2023', experience: 11, city: 'Саратов', where: 'Сбербанк', like: false, state: true, avarar: 'https://kartinkin.net/uploads/posts/2021-07/1625785184_32-kartinkin-com-p-programmist-art-art-krasivo-34.jpg', lastwork: 'Озон', lastvacancy: 'Коммуникационный директор' },
+//   { name: 'Эдуард Стариков', age: '51', profession: 'Фронтенд', date: '05.10.2023', experience: 1, city: 'Саратов', prev: 'ВТБ', like: true, state: false, avarar: 'https://kartinkin.net/uploads/posts/2021-07/1625785184_32-kartinkin-com-p-programmist-art-art-krasivo-34.jpg', lastwork: 'Озон', lastvacancy: 'Коммуникационный директор' },
+]

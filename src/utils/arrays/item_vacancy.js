@@ -1,11 +1,12 @@
 export const itemVacancy = {
-    total: '80',
-    new: '12',
+    id: 'b80f82bi',
+    new: '10',
+    total: '30',
+    name: "Веб-дизайнер",
     company: "Сбербанк",
-    name: "UI/UX дизайнер / веб дизайнер",
     city: 'Москва',
     format: 'Офис',
-    experience: 2,
-    salary: '65 000 - 90 000 ₽',
-    technologies: ['Figma', 'Дизайн система']
-  }
+    experience: '0',
+    technologies: ['Figma', 'Tilda'],
+    salary: 'от 60.000 ₽',  
+}

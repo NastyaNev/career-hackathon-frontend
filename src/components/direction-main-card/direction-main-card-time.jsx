@@ -93,6 +93,14 @@ function DirectionMainCardTime(props) {
     padding: '2px 4px'    
   }
 
+  const years = () => {if (item.experience === 1) {return 'год'}
+    else if (item.experience > 1 && item.experience < 5) {
+      return "года"
+    } else {
+      return 'лет'
+    }
+  }
+
   return (
     <NavLink target="_blank" className={styles.card_link} to={wayTime}>
       <Tooltip title={`Перейти в анкету ${item.name}`} >
@@ -119,7 +127,7 @@ function DirectionMainCardTime(props) {
                 <Typography variant="body2" style={ textDownStyleProf } ml={1}>{item.prev}</Typography>
               </div>
               <Stack direction='row' alignItems='center' spacing={2}>
-                <Typography variant="body2" style={{ ...textVioletStyle, marginTop: '16px', marginBottom: '20px' }}>12 лет</Typography>
+                <Typography variant="body2" style={{ ...textVioletStyle, marginTop: '16px', marginBottom: '20px' }}>{item.experience} {years()}</Typography>
                 <img src={medal} alt="награда" />
               </Stack>
             </div>

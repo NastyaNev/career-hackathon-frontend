@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {NavLink, useParams} from 'react-router-dom';
-import {Paper, Stack} from "@mui/material";
+import {Link, Paper, Stack, Tooltip} from "@mui/material";
 import { Outlet } from 'react-router-dom';
 
 
@@ -42,8 +42,12 @@ function Vacancy() {
                 <p className={styles.company}>{itemVacancy!.company}</p>
               </span>
               <span className={styles.buttons}>
+                <Tooltip title='Редактировать вакансию'>
                   <img className={styles.button} src={edit} alt="Редактировать"/>
+                </Tooltip>
+                <Tooltip title='Удалить вакансию'>
                   <img className={styles.button} src={trash} alt="Удалить"/>
+                </Tooltip>
               </span>
             </span>
           </span>
@@ -70,11 +74,15 @@ function Vacancy() {
           </ul>
         </Stack>
         <Stack>
-          <button className={styles.find}>Найти кандидата</button>
-          <div style={{display: "flex", justifyContent: "flex-end"}}>
-            <p className={styles.open}>Описание вакансии</p>
-            <img src={arrowDown} alt="Вниз"/>
-          </div>
+          <Tooltip title='Отсортировать подходящих кандидатов'>
+            <button className={styles.find}>Найти кандидата</button>
+          </Tooltip>
+          <Tooltip title='Развернуть описание вакансии'>
+            <Link style={{display: "flex", justifyContent: "flex-end"}} className={styles.description_link} component="button" underline='none'>
+              <p className={styles.open}>Описание вакансии</p>
+              <img src={arrowDown} alt="Вниз"/>
+            </Link>
+          </Tooltip>
         </Stack>
       </Paper>
       <Stack mb={3} mt={3} direction='row' spacing={2} >
