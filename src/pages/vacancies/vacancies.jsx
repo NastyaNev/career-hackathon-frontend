@@ -15,15 +15,13 @@ import {Outlet} from "react-router";
 function Vacancies() {
   return (
     <>
-      <main>
         <div className={styles.header}>
           <h2 className={styles.heading}>Мои вакансии</h2>
-          <img src={plus} alt="Добавить"/>
+          <ButtonPlus image={plus} />
         </div>
         <Stack
           direction={'row'}
           justifyContent={'space-between'}
-          mb={2.5}
         >
           <PageSubMenu
             links={
@@ -43,7 +41,6 @@ function Vacancies() {
             </ButtonGroup>
           </div>
         </Stack>
-      </main>
       <Outlet />
     </>
   )

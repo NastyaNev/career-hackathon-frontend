@@ -1,8 +1,9 @@
+import { Typography } from '@mui/material'
 import React from 'react'
 
 function VacanciesArchive() {
   return (
-    <div>Привет, я страница с архивными вакансиями</div>
+    <Typography mt={3.5}>Привет, я страница с архивными вакансиями</Typography>
   )
 }
 

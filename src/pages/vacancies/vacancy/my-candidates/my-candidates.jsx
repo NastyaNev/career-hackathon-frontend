@@ -35,10 +35,6 @@ function MyCandidates() {
 
   return (
     <>
-        <NavLink to="/vacancies">
-            <p>Назад в Мои вакансии</p>
-        </NavLink>
-
         <TableContainer>
         <Table sx={ tableStyle }>
           <TableHead>

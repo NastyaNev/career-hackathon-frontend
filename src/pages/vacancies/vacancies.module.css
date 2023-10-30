@@ -9,6 +9,7 @@
   font-family: 'YS Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
   line-height: 32px;
+  margin: 0;
 }
 
 .vacancies {
@@ -23,6 +24,8 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+  margin-right: 40px;
+  align-items: center;
 }
 
 .buttons {
