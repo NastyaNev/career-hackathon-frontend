@@ -12,7 +12,7 @@ import arrowDown from "../../images/arrow_down_black.svg";
 import arrowUp from "../../images/arrow_up.svg";
 import styles from "./drop-down-menu.module.css";
 
-function DropDownMenu({ nameFilter, options }) {
+function DropDownMenu({ nameFilter, options, filterKey }) {
   let bool = () => {
     if (options.length === 0) {
       return false;
@@ -50,7 +50,8 @@ function DropDownMenu({ nameFilter, options }) {
       </Box>
       {open ? (
         <Stack sx={{ p: "12px 8px 0 8px", gap: "8px" }}>
-          {options.map((option) => (
+          {options.map((option) => {
+            return (  
             <MenuItem
               key={option}
               value={nameFilter}
@@ -58,7 +59,7 @@ function DropDownMenu({ nameFilter, options }) {
               className={styles.options}
             >
               <ListItemIcon sx={{ height: "20px" }}>
-                <Checkbox />
+                <Checkbox inputProps={{'data-filter':true, 'data-group': filterKey, 'data-id': option}}/>
               </ListItemIcon>
               <ListItemText
                 disableTypography
@@ -66,8 +67,8 @@ function DropDownMenu({ nameFilter, options }) {
                 sx={{ padding: 0 }}
                 className={styles.options}
               />
-            </MenuItem>
-          ))}
+            </MenuItem> )
+          })}
         </Stack>
       ) : null}
     </>

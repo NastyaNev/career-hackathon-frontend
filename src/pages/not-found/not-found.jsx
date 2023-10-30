@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import notFound from '../../images/not_found.jpeg';
 
 function NotFound() {
   return (
     <>
-      <p>Страница не найдена</p>
+      <img src={notFound} alt='страница не найдена'/>
     </ >
   )
 }

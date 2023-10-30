@@ -110,6 +110,9 @@ function Candidate() {
                 {itemCandidat.business}
               </li>
               <li className={styles.condition}>
+                {itemCandidat.format}
+              </li>
+              <li className={styles.condition}>
                 {itemCandidat.education}
               </li>
             </ul>
@@ -211,7 +214,7 @@ function Candidate() {
               <Typography sx={{fontSize: '18px', fontStyle: 'normal', fontWeight: 400, lineHeight: '24px', color: '#797981', width: '163px'}}>{itemCandidat.prev}</Typography>
               <Stack spacing={1.5} justifyContent='space-between' sx={{width: '552px'}}>
                 <Typography  className={styles.about}>{itemCandidat.functions}</Typography>
-                
+
                 <Stack spacing={0.5}>
                   <Typography className={styles.about} sx={{color: '#1A1B22', fontWeight: 900}}>Достижения:</Typography>
                   <Typography className={styles.about}>{itemCandidat.riches}</Typography>
@@ -220,7 +223,7 @@ function Candidate() {
             </Stack>
           </Paper>
         </Stack>
-        <Stack spacing={2.5} sx={{maxWidth: '393px'}} >
+        <Stack spacing={2.5} sx={{width: '30%'}} >
           <CardForVacancy />
           <Tooltip title="Открыть сопроводительное письмо">
             <Box sx={{borderRadius: '6px', backgroundColor: '#F1F6FF', padding: '24px', cursor: 'pointer', '&:hover': {opacity: [0.8, 0.8, 0.7]}}}>
