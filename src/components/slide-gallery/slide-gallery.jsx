@@ -54,7 +54,7 @@ function SlideGallery({ card, items }) {
           }}
         >
           {items.map((item, i) => (
-            <Card key={i} item={item} wayDirection='#' wayVacancies='/vacancies/vacancy' wayTime='/candidates/candidate'/>
+            <Card key={i} item={item} wayDirection='#' wayVacancies={`/vacancies/vacancy/${item.id}`} wayTime='/candidates/candidate'/>
           ))}
         </Carousel>
       </Stack>

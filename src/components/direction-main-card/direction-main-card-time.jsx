@@ -119,7 +119,7 @@ function DirectionMainCardTime(props) {
                 <Typography variant="body2" style={ textDownStyleProf } ml={1}>{item.prev}</Typography>
               </div>
               <Stack direction='row' alignItems='center' spacing={2}>
-                <Typography variant="body2" style={{ ...textVioletStyle, marginTop: '16px', marginBottom: '20px' }}>+12 лет</Typography>
+                <Typography variant="body2" style={{ ...textVioletStyle, marginTop: '16px', marginBottom: '20px' }}>12 лет</Typography>
                 <img src={medal} alt="награда" />
               </Stack>
             </div>

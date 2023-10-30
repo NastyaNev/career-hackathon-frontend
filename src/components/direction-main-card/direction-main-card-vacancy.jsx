@@ -82,6 +82,10 @@ function DirectionMainCardVacancy(props) {
     height: '14px'
   }
 
+  const textNoneStyle = {
+    display: 'none'
+  }
+
 
   return (
     <NavLink target="_blank" className={styles.card_link} to={wayVacancies}>
@@ -90,8 +94,8 @@ function DirectionMainCardVacancy(props) {
           <Stack sx={ stackStyle }>
             <div style={divTopStyle}>
               <Typography variant="body2" style={{ ...textTopStyle, marginRight: '12px' }}>Всего откликов:</Typography>
-              <Typography variant="body2" style={{ ...textTopStyle, marginRight: '2px' }}>80</Typography>
-              <Typography variant="body2" style={ textRedStyle }>+12</Typography>
+              <Typography variant="body2" style={{ ...textTopStyle, marginRight: '2px' }}>{item.total}</Typography>
+              <Typography variant="body2" style={ item.new === '0' ? textNoneStyle : textRedStyle}>+{item.new}</Typography>
             </div>
             <div>
               <Typography variant="body2" style={ textTopStyle }>{item.company}</Typography>

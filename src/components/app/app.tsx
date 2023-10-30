@@ -28,9 +28,9 @@ function App() {
             <Route path="/vacancies" element={<VacanciesActual />} />
             <Route path="/vacancies/vacancies-archive" element={<VacanciesArchive />} />
           </Route>
-          <Route path="/vacancies/vacancy" element={<Vacancy />} >
-            <Route path="/vacancies/vacancy" element={<MyCandidates />} />
-            <Route path="/vacancies/vacancy/vacancy-applications" element={<VacancyApplications />} />
+          <Route path="/vacancies/vacancy/:id" element={<Vacancy />} >
+            <Route path="/vacancies/vacancy/:id" element={<MyCandidates />} />
+            <Route path="/vacancies/vacancy/:id/vacancy-applications" element={<VacancyApplications />} />
           </Route>
           <Route path="/candidates/candidate" element={<Candidate />} />
           <Route path="/applications" element={<Applications />} >

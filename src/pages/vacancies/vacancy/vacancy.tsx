@@ -1,7 +1,8 @@
-import React from 'react';
-import {NavLink} from 'react-router-dom';
+import React, {useEffect} from 'react';
+import {NavLink, useParams} from 'react-router-dom';
 import {Paper, Stack} from "@mui/material";
 import { Outlet } from 'react-router-dom';
+
 
 import {itemsVacancies} from "../../../utils/arrays/items-vacancies";
 
@@ -21,9 +22,11 @@ interface IVacancyProps {
   technologies: Array<string>
 }
 
-const itemVacancy = itemsVacancies[0];
-
 function Vacancy() {
+  const { id } = useParams();
+
+  const itemVacancy = itemsVacancies.find(item => item.id === id);
+  
   return (
     <>
       <NavLink to="/vacancies" className={styles.link}>
@@ -35,8 +38,8 @@ function Vacancy() {
           <span className={styles.description}>
             <span className={styles.container}>
               <span className={styles.heading}>
-                <h2 className={styles.vacancy}>{itemVacancy.name}</h2>
-                <p className={styles.company}>{itemVacancy.company}</p>
+                <h2 className={styles.vacancy}>{itemVacancy!.name}</h2>
+                <p className={styles.company}>{itemVacancy!.company}</p>
               </span>
               <span className={styles.buttons}>
                   <img className={styles.button} src={edit} alt="Редактировать"/>
@@ -46,15 +49,15 @@ function Vacancy() {
           </span>
           <ul className={styles.conditions}>
             <li className={styles.condition}>
-              {itemVacancy.city}
+              {itemVacancy!.city}
             </li>
             <li className={styles.condition}>
-              {itemVacancy.format}
+              {itemVacancy!.format}
             </li>
             <li className={styles.condition}>
-              {`Опыт от ${itemVacancy.experience} лет`}
+              {`Опыт от ${itemVacancy!.experience} лет`}
             </li>
-            {itemVacancy.technologies.map((technology, index) => {
+            {itemVacancy!.technologies.map((technology, index) => {
               return (
                 <li key={index} className={styles.condition}>
                   {technology}
@@ -62,7 +65,7 @@ function Vacancy() {
               )
             })}
             <li className={styles.condition}>
-              {itemVacancy.salary}
+              {itemVacancy!.salary}
             </li>
           </ul>
         </Stack>

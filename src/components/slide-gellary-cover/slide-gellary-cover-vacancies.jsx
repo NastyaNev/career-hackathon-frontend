@@ -18,7 +18,7 @@ function SlideGellaryCoverVacancies () {
             <ButtonPlus image={plus} text="Добавить" />
         </Stack>
         <NavLink to="/vacancies" target="_blank" className={stylesButton.button} >
-          <MainButton text="Мои вакансии" variant="outlined"  />
+          <MainButton text="Мои вакансии" variant="outlined" width='140px' />
         </NavLink>
     </Stack>
   )
