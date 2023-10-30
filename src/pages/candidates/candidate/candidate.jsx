@@ -110,6 +110,9 @@ function Candidate() {
                 {itemCandidat.business}
               </li>
               <li className={styles.condition}>
+                {itemCandidat.format}
+              </li>
+              <li className={styles.condition}>
                 {itemCandidat.education}
               </li>
             </ul>

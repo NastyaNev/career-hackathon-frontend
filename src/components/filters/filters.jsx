@@ -7,16 +7,18 @@ import { optionsDirections, optionsProfessions, optionsExperience, optionsFormat
 
 function Filters () {
 
+
+
   return (
     <Stack sx={{width: 290}}>
         <Typography mb={2.5} sx={{fontFamily: 'YS Display', fontSize: '20px', fontStyle: 'normal', fontWeight: 500, lineHeight: '24px'}}>Фильтры</Typography>
         <SearchInput />
-        <DropDownMenu nameFilter='Направление' options={optionsDirections} />
-        <DropDownMenu nameFilter='Специальность' options={optionsProfessions} />
-        <DropDownMenu nameFilter='Опыт работы' options={optionsExperience} />
-        <DropDownMenu nameFilter='Формат работы' options={optionsFormat} />
-        <DropDownMenu nameFilter='Занятость' options={optionsBusyness} />
-        <DropDownMenu nameFilter='Локация' options={optionsLocation} />
+        <DropDownMenu nameFilter='Направление' filterKey='direction' options={optionsDirections}  />
+        <DropDownMenu nameFilter='Специальность' filterKey='profession' options={optionsProfessions}  />
+        <DropDownMenu nameFilter='Опыт работы' filterKey='experience' options={optionsExperience}  />
+        <DropDownMenu nameFilter='Формат работы' filterKey='format' options={optionsFormat}  />
+        <DropDownMenu nameFilter='Занятость' filterKey='business' options={optionsBusyness}  />
+        <DropDownMenu nameFilter='Локация' filterKey='city' options={optionsLocation}  />
         <Box>
             <Typography mb={1} mt={2.5} sx={{fontFamily: 'YS Display', fontSize: '16px', fontStyle: 'normal', fontWeight: 500, lineHeight: '20px'}}>Слова исключения</Typography>
             <WordsInput />
