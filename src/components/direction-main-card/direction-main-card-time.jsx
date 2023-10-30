@@ -22,7 +22,7 @@ function DirectionMainCardTime(props) {
   const stackStyle = {
     padding: '24px',
     height: '182px',
-    display: 'flex', 
+    display: 'flex',
     lexDirection: 'column'
   };
 
@@ -61,7 +61,7 @@ function DirectionMainCardTime(props) {
     fontWeight: '500',
     fontSize: '11px'
   };
-  
+
   const textDownStyle = {
     color: '#797981',
     fontFamily: 'YS Text',
@@ -86,11 +86,8 @@ function DirectionMainCardTime(props) {
     backgroundColor: '#7F67D2',
     borderRadius: '10px',
     marginTop: '12px',
-    padding: '2px 4px',
-    display: 'inline-block',
     lineHeight: '12px',
-    borderRadius: '10px',
-    padding: '2px 4px'    
+    padding: '2px 4px'
   }
 
   const years = () => {if (item.experience === 1) {return 'год'}
@@ -107,7 +104,7 @@ function DirectionMainCardTime(props) {
         <Paper elevation={3} square={false} sx={cardStyle}>
           <Stack sx={ stackStyle }>
             <div>
-              <Stack direction='row' justifyContent='space-between' sx={{width: 224}}> 
+              <Stack direction='row' justifyContent='space-between' sx={{width: 224}}>
                 <Typography variant="body2" style={ textTopGreenStyle }>&#9679; была сегодня</Typography>
                 <img src={like} alt="лайк" />
               </Stack>

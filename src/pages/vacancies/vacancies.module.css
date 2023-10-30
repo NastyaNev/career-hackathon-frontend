@@ -18,3 +18,28 @@
   row-gap: 22px;
   column-gap: 20px;
 }
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.buttons {
+  gap: 11px;
+}
+
+.button {
+  top: -2px ;
+  left: 0 ;
+  width: 36px !important;
+  height: 36px !important;
+}
+
+.new-class-input {
+  padding: 0 !important;
+}
+
+.search {
+  width: 290px;
+}
