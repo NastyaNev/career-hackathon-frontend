@@ -94,6 +94,7 @@ function Vacancy() {
       <Stack
         direction={'row'}
         justifyContent={'space-between'}
+        pr={5}
       >
         <PageSubMenu
           links={
@@ -102,7 +103,7 @@ function Vacancy() {
                 to={'.'} text={'Мои кандидаты'}
               />
               <PageSubMenuLink
-                to={'/vacancy-applications'} text={'Архив'}
+                to={`/vacancies/vacancy/${itemVacancy!.id}/vacancy-applications`} text={'Отклики'}
               />
             </>
           }
