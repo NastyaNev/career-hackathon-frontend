@@ -1,21 +1,22 @@
  <p align="center">
-  <b align="center" >Добро пожаловать в репозиторий самого лучшего сервиса по подбору сотрудников из числа выпоскников <h3>Яндекс.Практикума</h3></b>
+  <b align="center" >Добро пожаловать в репозиторий самого лучшего сервиса по подбору сотрудников из числа выпоскников </b>
+  <h3>Яндекс.Практикума</h3>
  </p>
  <p align="center">
-  <b align="center" >Demo опубликавано на GitHub-pages - <a href="https://nastyanev.github.io/career-hackathon-frontend/" title="Ссылка на GitHub Pages">ссылка</a>.</b>
+  <h4 align="center" >Demo опубликавано на GitHub-pages - <a href="https://nastyanev.github.io/career-hackathon-frontend/" title="Ссылка на GitHub Pages">ссылка</a>.</h4>
   <p align="center" >Не забудьте нажать "Открыть в новой вкладке" :wink: </p>
  </p>
 
 
 Мы - небольшая, но дужная команда с веселым названем **"Дедлайн вчера"**. Сделали этот проект с большой отдачей и довольно дружно! Мы постарались не просто сверстать сайт, но сделать его действительно приятным и удобным с точки  зрения юзера. Конечно, там многое предстоит еще доработать, но этов сего лишь демо! А мы, в свою очередь, запомним этот проект как отличный опыт командной разработки и общения с коллегами! Желаем приятного изучения!
 <p align="center">
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/cc9ef5b6-319d-4727-a044-0b9758b4c2b8" title="Ссылка на GitHub Pages" width="20%" />
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/e0b68e1a-a47c-4a2e-b293-ba81a33ef512" title="Ссылка на GitHub Pages" width="20%"/>
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/1f458825-481f-41d0-8e47-d38ec5579d51" title="Ссылка на GitHub Pages" width="20%"/>
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/0145cad3-6141-4cbd-9768-f11fefeedd3a" title="Ссылка на GitHub Pages" width="20%"/>
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/9d60a99f-1f78-455e-911b-e7c4612764cb" title="Ссылка на GitHub Pages" width="20%"/>
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/5170eede-22d2-4176-ac84-29382a8da327" title="Ссылка на GitHub Pages" width="20%"/>
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/e038d2db-da94-4215-b5e8-566eababf075" title="Ссылка на GitHub Pages" width="20%"/> 
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/cc9ef5b6-319d-4727-a044-0b9758b4c2b8" title="Ссылка на GitHub Pages" width="15%" />
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/e0b68e1a-a47c-4a2e-b293-ba81a33ef512" title="Ссылка на GitHub Pages" width="15%"/>
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/1f458825-481f-41d0-8e47-d38ec5579d51" title="Ссылка на GitHub Pages" width="15%"/>
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/0145cad3-6141-4cbd-9768-f11fefeedd3a" title="Ссылка на GitHub Pages" width="15%"/>
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/9d60a99f-1f78-455e-911b-e7c4612764cb" title="Ссылка на GitHub Pages" width="15%"/>
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/5170eede-22d2-4176-ac84-29382a8da327" title="Ссылка на GitHub Pages" width="15%"/>
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/e038d2db-da94-4215-b5e8-566eababf075" title="Ссылка на GitHub Pages" width="15%"/> 
 </p>
 
 `Стек:`
@@ -47,10 +48,6 @@
   ```console
   --legacy-peer-deps
   ```
-  НАПРИМЕР при установке зависимостей
-  ```console
-   npm install --legacy-peer-deps
-   ```
 
 3. Запустить проект локально
    ```console
@@ -58,9 +55,9 @@
    ```
 
 4. Задеплоить проект
- ```console
-    npm tun deploy
-    ```     
+   ```console
+   npm tun deploy
+   ```     
 
 ***Библиотеки:***
 
