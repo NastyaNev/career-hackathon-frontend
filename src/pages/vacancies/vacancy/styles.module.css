@@ -27,6 +27,7 @@
   flex-direction: row;
   padding: 24px;
   justify-content: space-between;
+  margin-bottom: 28px;
 }
 
 .description {
@@ -137,4 +138,25 @@
 
 .description_link:hover {
   opacity: 0.6;
+}
+
+.search {
+  width: 290px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.filterButtons {
+  gap: 11px;
+}
+
+.filterButton {
+  top: -2px ;
+  left: 0 ;
+  width: 36px !important;
+  height: 36px !important;
 }

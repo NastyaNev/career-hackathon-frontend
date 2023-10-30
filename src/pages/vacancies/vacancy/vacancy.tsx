@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {NavLink, useParams} from 'react-router-dom';
-import {Link, Paper, Stack, Tooltip} from "@mui/material";
+import {ButtonGroup, Link, Paper, Stack, Tooltip} from "@mui/material";
 import { Outlet } from 'react-router-dom';
 
 
@@ -12,6 +12,12 @@ import trash from '../../../images/trash.svg'
 import arrowDown from '../../../images/arrow_down_blue.svg'
 
 import styles from './styles.module.css'
+import PageSubMenu from "../../../components/ui/page-sub-menu/PageSubMenu";
+import PageSubMenuLink from "../../../components/ui/page-sub-menu-link/PageSubMenuLink";
+import SearchInput from "../../../components/search-input/search-input";
+import ButtonPlus from "../../../components/button-plus/button-plus";
+import table from "../../../images/view-table.svg";
+import grid from "../../../images/view-grid.svg";
 
 interface IVacancyProps {
   name: string;
@@ -26,7 +32,7 @@ function Vacancy() {
   const { id } = useParams();
 
   const itemVacancy = itemsVacancies.find(item => item.id === id);
-  
+
   return (
     <>
       <NavLink to="/vacancies" className={styles.link}>
@@ -85,9 +91,29 @@ function Vacancy() {
           </Tooltip>
         </Stack>
       </Paper>
-      <Stack mb={3} mt={3} direction='row' spacing={2} >
-          <NavLink to="/vacancies/vacancy" end>Мои кандидаты</NavLink>
-          <NavLink to="/vacancies/vacancy/vacancy-applications">Отклики</NavLink>
+      <Stack
+        direction={'row'}
+        justifyContent={'space-between'}
+      >
+        <PageSubMenu
+          links={
+            <>
+              <PageSubMenuLink
+                to={'.'} text={'Мои кандидаты'}
+              />
+              <PageSubMenuLink
+                to={'/vacancy-applications'} text={'Архив'}
+              />
+            </>
+          }
+        />
+        <div className={styles.filters}>
+          <SearchInput className={styles.search} />
+          <ButtonGroup className={styles.filterButtons}>
+            <ButtonPlus image={table} className={styles.filterButton} text='Вид: Таблица'/>
+            <ButtonPlus image={grid} className={styles.filterButton} text='Вид: Сетка' />
+          </ButtonGroup>
+        </div>
       </Stack>
       <Outlet />
     </>
