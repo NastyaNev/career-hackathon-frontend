@@ -1,22 +1,24 @@
- <p align="center">
   <b align="center" >Добро пожаловать в репозиторий самого лучшего сервиса по подбору сотрудников из числа выпоскников </b>
+  <p align="center">
   <h3>Яндекс.Практикума</h3>
  </p>
  <p align="center">
   <h4 align="center" >Demo опубликавано на GitHub-pages - <a href="https://nastyanev.github.io/career-hackathon-frontend/" title="Ссылка на GitHub Pages">ссылка</a>.</h4>
   <p align="center" >Не забудьте нажать "Открыть в новой вкладке" :wink: </p>
  </p>
+ <p align="center">
+   <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/fa7c0aca-2b4e-4d88-a448-e69bed644c50)" width="40%" />
+ </p>
 
-
-Мы - небольшая, но дужная команда с веселым названем **"Дедлайн вчера"**. Сделали этот проект с большой отдачей и довольно дружно! Мы постарались не просто сверстать сайт, но сделать его действительно приятным и удобным с точки  зрения юзера. Конечно, там многое предстоит еще доработать, но этов сего лишь демо! А мы, в свою очередь, запомним этот проект как отличный опыт командной разработки и общения с коллегами! Желаем приятного изучения!
+Мы - небольшая, но дужная команда с веселым названем **"Дедлайн вчера"**. Сделали этот проект с большой отдачей и довольно дружно! Мы постарались не просто сверстать сайт, но сделать его действительно приятным и удобным с точки  зрения юзера. Конечно, там многое предстоит еще доработать, но это всего лишь демо. А мы, в свою очередь, запомним этот проект как отличный опыт командной разработки и общения с коллегами! Желаем приятного ревью!
 <p align="center">
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/cc9ef5b6-319d-4727-a044-0b9758b4c2b8" title="Ссылка на GitHub Pages" width="15%" />
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/e0b68e1a-a47c-4a2e-b293-ba81a33ef512" title="Ссылка на GitHub Pages" width="15%"/>
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/1f458825-481f-41d0-8e47-d38ec5579d51" title="Ссылка на GitHub Pages" width="15%"/>
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/0145cad3-6141-4cbd-9768-f11fefeedd3a" title="Ссылка на GitHub Pages" width="15%"/>
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/9d60a99f-1f78-455e-911b-e7c4612764cb" title="Ссылка на GitHub Pages" width="15%"/>
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/5170eede-22d2-4176-ac84-29382a8da327" title="Ссылка на GitHub Pages" width="15%"/>
-  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/e038d2db-da94-4215-b5e8-566eababf075" title="Ссылка на GitHub Pages" width="15%"/> 
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/cc9ef5b6-319d-4727-a044-0b9758b4c2b8" title="Наталья, дизайнер" width="12%" />
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/e0b68e1a-a47c-4a2e-b293-ba81a33ef512" title="Анастасия, frontend" width="12%"/>
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/1f458825-481f-41d0-8e47-d38ec5579d51" title="Надя, frontend" width="12%"/>
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/0145cad3-6141-4cbd-9768-f11fefeedd3a" title="Кирилл, frontend" width="12%"/>
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/9d60a99f-1f78-455e-911b-e7c4612764cb" title="Яна, проджект-менеджер" width="12%"/>
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/5170eede-22d2-4176-ac84-29382a8da327" title="Андрей, дизайнер" width="12%"/>
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/e038d2db-da94-4215-b5e8-566eababf075" title="Алиса, дизайнер" width="12%"/> 
 </p>
 
 `Стек:`
@@ -45,9 +47,9 @@
    ```
 
   ВАЖНО!!! Зависимостри всгда устанавливаем с ключем
-  ```console
-  --legacy-peer-deps
-  ```
+   ```console
+   --legacy-peer-deps
+   ```
 
 3. Запустить проект локально
    ```console
@@ -68,29 +70,33 @@
   &nbsp;&nbsp;&nbsp;&nbsp;4. MUI<br />
   &nbsp;&nbsp;&nbsp;&nbsp;5. react-router-dom
 
-  &nbsp;&nbsp;&nbsp;&nbsp;5. Установлен TypeScript<br />
+  &nbsp;&nbsp;&nbsp;&nbsp; Установлен TypeScript<br />
 
 **Дополнительно:**
  
-  &nbsp;&nbsp;&nbsp;&nbsp;5. Установлена библиотека `<a href="https://www.npmjs.com/package/react-elastic-carousel" title="Ссылка на библиотеку">react-elastic-carousel</a>` для создания каруселей-слайдеров на главной странице. Это было не лучшим решением, поскольку библиотека написана для более ранней версии React-а, но когда это обнаружилось, работа была уже почти сделана)).
+  &nbsp;&nbsp;&nbsp;&nbsp; Установлена библиотека <a href="https://www.npmjs.com/package/react-elastic-carousel" title="Ссылка на библиотеку">react-elastic-carousel</a> для создания каруселей-слайдеров на главной странице. Это было не лучшим решением, поскольку библиотека написана для более ранней версии React-а, но когда это обнаружилось, работа была уже почти сделана)).
+  <p align="center">
+   <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/5cf1987d-350c-40de-b431-7321f1db49ec" width="70%" />
+  </p>
+
 
 Проект выполнен согласно макету из <a href="https://www.figma.com/file/HNlScS7ZNj9uja2ZnIXHMl/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0-%E2%84%964%7C-%D0%A5%D0%B0%D0%BA%D0%B0%D1%82%D0%BE%D0%BD.-%D0%A2%D1%80%D0%B5%D0%BA%D0%B5%D1%80?type=design&node-id=111-67&mode=design&t=zqO3taEFAlin9f5e-0" title="Ссылка на проект в Figma">Figma</a> . Основной экран 1440px, для остальных десктопных разрешений сделали "резиновую" верстку.
 
 **1440px**
+ <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/dfe07ded-00a1-4073-a6e5-7ebf58e922b1" width="49%" />
+ <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/8c6afa69-4357-449b-a8f5-8bc109437ca3" width="49%" />
+ <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/1430a377-5735-437c-aac2-bd880e953642" width="49%" />
+ <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/6420e06a-ba5b-4f91-ab5a-a4ce02e69cbc" width="49%" />
+
+К сожалению, бэкенд нам до сих пор не отдал ручки (на момент написания этого файла, вечер 30.10), поэтому примитивный функционал мы осуществили на фронте. А именно - подгрузку анкет кандидатов из массива и фильтрацию.
 <p align="center">
- <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/dfe07ded-00a1-4073-a6e5-7ebf58e922b1 width="20%" />
- <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/8c6afa69-4357-449b-a8f5-8bc109437ca3 width="20%" />
- <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/1430a377-5735-437c-aac2-bd880e953642 width="20%" />
- <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/6420e06a-ba5b-4f91-ab5a-a4ce02e69cbc width="20%" />
-</p>
-
-К сожалению, бэкенд нам до сихпорне отдал ручки (на момент написания этого файла, вечер 30.10), поэтому примитивный функционал мы осуществили на фронте. А именно - подгрузку анкет кандидатов из массива и фильтрацию.
-
+  <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/fb512d45-071a-492a-bcd9-600689c15526" width="40%" />
+</p> 
 
 **Краткое резюме**:
-Это былпотрясающий опытработы над реальным проектом. Будем рады, если у  вас также останутся приятные впечатления от нашей работы :+1: .
+Это был потрясающий опыт работы над реальным проектом. Будем рады, если у вас также останутся приятные впечатления от нашей работы :+1: .
 
-P.S.: Эта гифкас котиком сопровождаланас на протяжении всего этого времени. Мы бы хотели оставить этот талисман здесь :point_down:
+P.S.: Эта гифка с котиком сопровождала нас на протяжении всего этого времени. Мы бы хотели оставить этот талисман здесь :point_down:
 <p align="center">
   <img src="https://github.com/NastyaNev/career-hackathon-frontend/assets/129982615/127f80c3-121c-4759-964a-f20554723ac2" width="20%" />
 </p>
