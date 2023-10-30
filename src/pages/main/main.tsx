@@ -1,6 +1,5 @@
 import React from 'react';
 import { Stack } from '@mui/material';
-import styles from './main.module.css';
 import list from '../../images/icons/list.svg';
 import clock from '../../images/icons/clock.svg';
 import personal from '../../images/icons/personal.svg';
@@ -25,7 +24,7 @@ function Main() {
         <Highlight text={"Ответа ожидают"} notifications={10} icon={clock} boxType={'awaiting'} />
         <Highlight text={"Хотят работать у вас"} notifications={200} icon={personal} boxType={'work'} />
       </Stack>
-      <Stack mt={7.5} spacing={7.5} className={styles.galleries_container}>
+      <Stack mt={7.5} spacing={7.5}>
         <Gellary cover={<SlideGellaryCoverDirections />} card={DirectionMainCard} items={itemsCandidates} />
         <Gellary cover={<SlideGellaryCoverVacancies />} card={DirectionMainCardVacancy} items={itemsVacancies} />
         <Gellary cover={<SlideGellaryCoverCandidates />} card={DirectionMainCardTime} items={itemsTime} />

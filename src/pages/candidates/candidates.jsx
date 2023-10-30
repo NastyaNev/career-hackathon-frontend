@@ -11,7 +11,7 @@ import MainButton from 'components/main-button/main-button';
 function Сandidates() {
   return (
     <>
-      <Typography mb={3.5} sx={{fontАamily: 'YS Display', fontSize: '24px', fontStyle: 'normal', fontWeight: 500, lineHeight: '24px'}}>Кандидаты</Typography>
+      <Typography mb={3.5} sx={{fontFamily: 'YS Display', fontSize: '24px', fontStyle: 'normal', fontWeight: 500, lineHeight: '24px'}}>Кандидаты</Typography>
 
       <Stack direction='row' >
         <Stack mr={2.5}>

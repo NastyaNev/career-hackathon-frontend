@@ -3,9 +3,9 @@
 }
 
 .left {
-  max-width: 807px;
-  width: 100%;
+  min-width: 500px;
   gap: 20px !important;
+  max-width: 807px;
 }
 
 .main {
@@ -85,6 +85,11 @@
   gap: 12px;
   justify-content: flex-end;
   align-items: flex-start;
+}
+
+.icons {
+  cursor: pointer;
+  
 }
 
 .locationBlock {
@@ -241,9 +246,9 @@
 
 .about {
   color: #959595;
-  font-family: 'YS Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  line-height: 20px;
-  font-size: 14px;
+  font-family: 'YS Text' !important;
+  line-height: 20px !important;
+  font-size: 14px !important;
 }
 
 .twoPapersContainer {
