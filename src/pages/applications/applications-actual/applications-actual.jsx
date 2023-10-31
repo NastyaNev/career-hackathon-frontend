@@ -1,5 +1,5 @@
-// import React, { useState } from 'react';
-import { Checkbox, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Tooltip } from '@mui/material';
+import React, { useState } from 'react';
+import { Checkbox, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Tooltip, Menu, MenuItem, Button } from '@mui/material';
 import { useNames } from '../../data';
 import { KebabButton } from '../../kebab-button';
 import { tableStyle, textHeaderStyle, textBodyStyle, contactStyle, photoStyle, ggInfoStyle, arrowDownStyle, textBodyVacancyStyle, HoverIcon } from '../../table-styles';
@@ -19,6 +19,21 @@ import DropDownTables from 'components/drop-down-menu/drop-down-tables';
 function ApplicationsActual() {
 
   const [names, setNames] = useNames();
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [sortingValue, setSortingValue] = useState('default');
+
+  const handleMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
+  const handleSortingChange = (value) => {
+    setSortingValue(value);
+    handleMenuClose();
+  };
 
   // Обработчики кликов
   const handleHeartClick = (index) => {
@@ -67,11 +82,17 @@ function ApplicationsActual() {
               <TableCell style={{ ...textHeaderStyle, width: '231px' }}>
                 Статус
                 <Tooltip title="Сортировка">
-                  <HoverIcon
-                    src={arrowDown}
-                    alt="Развернуть"
-                    style={ arrowDownStyle }
-                  />
+                  <Button
+                    aria-controls="sorting-menu"
+                    aria-haspopup="true"
+                    onClick={handleMenuOpen}
+                  >
+                    <HoverIcon
+                      src={arrowDown}
+                      alt="Развернуть"
+                      style={ arrowDownStyle }
+                    />
+                  </Button>
                 </Tooltip>
               </TableCell>
               <TableCell style={{ ...textHeaderStyle, width: '105px' }}>Дата отклика</TableCell>
@@ -80,7 +101,21 @@ function ApplicationsActual() {
           </TableHead>
 
           <TableBody>
-            {names.map((item, index) => (
+            {names
+              .filter((item) => {
+                // Здесь проверьте, соответствует ли элемент выбранному статусу
+                if (sortingValue === 'default' || sortingValue === 'Показать все') {
+                  return true; // Показать все элементы
+                } else {
+                  return item.status === sortingValue;
+                }
+              })
+              .map((item, index) => {
+              if (
+                (sortingValue === 'default' || sortingValue === 'Показать все') ||
+                sortingValue === 'Показать все' || item.status === sortingValue
+              ) {
+              return (
                 <TableRow style={{ height: '64px'}} key={index}>
                   <TableCell>
                     <HoverIcon
@@ -131,7 +166,7 @@ function ApplicationsActual() {
                   <TableCell style={ textBodyStyle }>{item.experience}</TableCell>
                   <TableCell style={ textBodyStyle }>{item.place}</TableCell>
                   <TableCell >
-                    <DropDownTables />
+                    <DropDownTables status={item.status}/>
                   </TableCell>
                   <TableCell style={textBodyStyle}>
                     {item.date}
@@ -142,9 +177,26 @@ function ApplicationsActual() {
                     </TableCell>
                   </Tooltip>
                 </TableRow>
-              ))}
+              );
+              } else {
+                return null;
+              }
+              })}
             </TableBody>
         </Table>
+
+        <Menu
+          id="sorting-menu"
+          anchorEl={anchorEl}
+          open={Boolean(anchorEl)}
+          onClose={handleMenuClose}
+        >
+          <MenuItem onClick={() => handleSortingChange('default')}>Показать все</MenuItem>
+          <MenuItem onClick={() => handleSortingChange('Новый')}>Новый</MenuItem>
+          <MenuItem onClick={() => handleSortingChange('На рассмотрении')}>На рассмотрении</MenuItem>
+          <MenuItem onClick={() => handleSortingChange('Интервью')}>Интервью</MenuItem>
+          <MenuItem onClick={() => handleSortingChange('Отказ')}>Отказ</MenuItem>
+        </Menu>
       </TableContainer>
   );
 }

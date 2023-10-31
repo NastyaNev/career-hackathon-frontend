@@ -1,7 +1,7 @@
 // Кнопка кебаб из таблиц
 
 import React, { useState } from 'react';
-import { Popover, Button } from '@mui/material';
+import { Popover, Button, List, ListItem } from '@mui/material';
 import kebabMenu from '../images/kebab-menu.svg';
 
 export const KebabButton = () => {
@@ -33,7 +33,12 @@ export const KebabButton = () => {
           horizontal: 'right',
         }}
       >
-        <p>Я выпадающее меню</p>
+        <List>
+          <ListItem>Скачать резюме</ListItem>
+          <ListItem>Написать</ListItem>
+          <ListItem>Поделиться</ListItem>
+          <ListItem>Удалить</ListItem>
+        </List>
       </Popover>
     </div>
   );

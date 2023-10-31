@@ -1,24 +1,36 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Select, FormControl, MenuItem } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 
 
-function DropDownTables() {
+function DropDownTables({ status }) {
 
-const [choose, setChoose] = React.useState('Новый');
+const [choose, setChoose] = useState(status);
+const [color, setColor] = useState(getColor(status));
+
+function getColor(status) {
+  switch (status) {
+    case "Новый":
+      return '#c2e5ce';
+    case "На рассмотрении":
+      return '#ffe1Bd';
+    case "Интервью":
+      return '#ccc2ed';
+    default:
+      return '#ffdde5';
+  }
+}
+
+useEffect(() => {
+  setChoose(status);
+  setColor(getColor(status));
+}, [status]);
 
 const handleChange = (event) => {
   setChoose(event.target.value);
 };
-
-let color = () => {
-    if(choose === "Новый") {return '#c2e5ce'}
-    else if (choose === "На рассмотрении") {return '#ffe1Bd'}
-    else if (choose === "Интервью") {return '#ccc2ed'}
-    else {return '#ffdde5'}
-}
 
 const BootstrapInput = styled(InputBase)(() => ({
     '& .MuiInputBase-input': {

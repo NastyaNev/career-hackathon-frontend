@@ -134,7 +134,7 @@ function DirectionMainCardTime(props) {
             </div>
             <div style={ divDownStyle }>
               <Typography variant="body2" style={{ ...textDownStyle, marginRight: '12px' }}>Просмотренно:</Typography>
-              <Typography variant="body2" style={ textDownStyle }>вчера, 20.10.23</Typography>
+              <Typography variant="body2" style={ textDownStyle }>вчера, 30.10.23</Typography>
             </div>
           </Stack>
         </Paper>
