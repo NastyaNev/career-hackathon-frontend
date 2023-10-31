@@ -59,7 +59,7 @@
 
 4. Задеплоить проект
    ```console
-   npm tun deploy
+   npm run deploy
    ```     
 
 ***Библиотеки:***
