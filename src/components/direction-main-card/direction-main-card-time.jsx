@@ -109,7 +109,7 @@ function DirectionMainCardTime(props) {
           <Stack sx={ stackStyle }>
             <div>
               <Stack direction='row' justifyContent='space-between' sx={{width: 224}}>
-                <Typography variant="body2" style={ textTopGreenStyle }>&#9679; была сегодня</Typography>
+                <Typography variant="body2" style={ textTopGreenStyle }>&#9679; {item.gender === 'male' ? 'был сегодня' : 'была сегодня'}</Typography>
                 <img src={like} alt="лайк" />
               </Stack>
               <Stack direction='row' spacing={2} sx={{alignItems: 'center'}} mt={1}>

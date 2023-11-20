@@ -59,7 +59,7 @@ function Candidate() {
         <Stack className={styles.left} flexDirection={"column"}>
           <Paper elevation={3} className={styles.main}>
             <div className={styles.commonText}>
-              <Typography variant="body2" className={styles.textTopGreenStyle}>&#9679; была сегодня</Typography>
+              <Typography variant="body2" className={styles.textTopGreenStyle}>&#9679; {itemCandidat.gender === 'male' ? 'был сегодня' : 'была сегодня'}</Typography>
               <Typography variant="body2" className={styles.timeOfEdit}>Резюме обновлено: 15.10.23</Typography>
             </div>
             <div className={styles.candidateAdditionalInfo}>
